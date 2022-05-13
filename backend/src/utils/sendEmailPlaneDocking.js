@@ -1,4 +1,4 @@
-var nodemailer = require('nodemailer');
+const nodemailer = require('nodemailer');
 module.exports = (exp , dest , destCity , city , at , mail) => {
 
     var transporter = nodemailer.createTransport({

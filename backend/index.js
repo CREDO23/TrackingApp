@@ -1,5 +1,7 @@
 const express = require('express')
 require('./src/db/mongoose') 
+const dotenv = require('dotenv');
+dotenv.config();
 
 const app =  express()
 const PORT = 3000
