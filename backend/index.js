@@ -4,7 +4,6 @@ const dotenv = require('dotenv');
 dotenv.config();
 
 const app =  express()
-const PORT = 3000
 
  const { createCustomer , updateCustomer , deleteCustomer , customerInfo , allCustomer} = require('./src/routes/registrations/regCustomer')
  createCustomer(app)
@@ -42,4 +41,4 @@ require('./src/routes/Notification/planeTakeOff')(app)
 
 
 
-app.listen(PORT , () => console.log(`votre serveur est bien ecoutee sur le port ${PORT}`))
+app.listen(process.env.PORT , () => console.log(`votre serveur est bien ecoutee sur le port ${process.env.PORT}`))

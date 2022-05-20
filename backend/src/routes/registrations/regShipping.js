@@ -3,6 +3,8 @@ const body_parser = require('body-parser')
 const customer = require('../../models/customers')
 const nodemailer = require('nodemailer')
 const officer = require('../../models/officers')
+const dotenv = require('dotenv');
+dotenv.config();
 
 
  const send = (ardess , shipping , key ) => {
@@ -11,7 +13,7 @@ const officer = require('../../models/officers')
       service: 'gmail',
       auth: {
         user: 'bakerathierry@gmail.com',
-        pass: '23022003cr'
+        pass: `${process.env.MAILCODE}`
       }
     });
   

@@ -1,4 +1,7 @@
 var nodemailer = require('nodemailer');
+const dotenv = require('dotenv');
+dotenv.config();
+
 module.exports = (user , shipCity , city , at , mail) => {
 
     var transporter = nodemailer.createTransport({
@@ -6,7 +9,7 @@ module.exports = (user , shipCity , city , at , mail) => {
       pool : true,
       auth: {
         user: 'bakerathierry@gmail.com',
-        pass: '23022003cr'
+        pass: `${process.env.MAILCODE}`
       }
     });
 
