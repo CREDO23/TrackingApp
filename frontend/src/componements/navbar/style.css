@@ -1,0 +1,37 @@
+*{
+    border: none;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.left , .right {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10% ;
+}
+
+.middle{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    height: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width:  40%;
+}
+
+
+.contenair{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:  100%;
+}

@@ -1,0 +1,25 @@
+.fcontenair{
+    height: 491px;
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+    text-align: center;
+    background-image: url('../../../public/images/foot.jpg.jpg');
+    background-position: 50% , 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.fleft{
+    width: 75%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.contact{
+    width: 25%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}

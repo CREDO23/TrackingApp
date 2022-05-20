@@ -1,0 +1,27 @@
+*{
+    border: none;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.left {
+    height: 50px;
+    align-self: flex-start;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right{
+    height: 50px;
+    align-self: flex-end;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.contenair{
+    display: flex;
+    align-items: center;
+}
