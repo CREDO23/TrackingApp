@@ -1,15 +1,14 @@
 import React from 'react';
-import Navbar from './componements/navbar/Navbar';
-import Accueil from './componements/accueil/accueil';
-import Footer from './componements/footer/Footer';
+import Profile from './componements/agent/profile/Profile';
+import Sidemenu from './componements/client/sidemenu/Sidemenu'
+
+
 const App = () => {
   return (
-    <>
-      <Navbar></Navbar>
-      <Accueil></Accueil>
-      <Footer></Footer>
-    </>
-    
+   <>
+    <Sidemenu></Sidemenu>
+    <Profile></Profile>
+   </> 
   );
 };
 

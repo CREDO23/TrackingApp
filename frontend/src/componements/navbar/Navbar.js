@@ -8,11 +8,11 @@ const Navbar = () => {
                LOGO
             </div>
            <ul className='middle'>
-                <li>ACCUEIL</li>
-                <li>À PROPOS</li>
-                <li>COMMENT ÇA MARCHE</li>
+                <li><a href='#ACCUEIL'>ACCUEIL</a></li>
+                <li><a href='#À PROPOS'>À PROPOS</a></li>
+                <li><a href='#COMMENT ÇA MARCHE'>COMMENT ÇA MARCHE</a></li>
            </ul>
-           <div className='right'>SE CONNECTER</div>
+           <div className='right'><a href='#CONNEXION'>CONNEXION</a></div>
         </div>
     );
 };

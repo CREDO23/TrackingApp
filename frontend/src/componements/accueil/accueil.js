@@ -8,8 +8,7 @@ const Accueil = () => {
                <div className='top'>
                     <h1> Nous acheminons vos biens professionnels,
                     effets personnels, valises diplomatiques par AIR, MER et ROUTE .</h1>
-                    <button>EN SAVOIR PLUS</button>
-                    <div cover></div>
+                    <button>EN SAVOIR PLUS</button>  
                </div>
 
                 <div className='mid'>
