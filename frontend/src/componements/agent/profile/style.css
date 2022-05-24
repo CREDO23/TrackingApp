@@ -4,6 +4,26 @@
     box-sizing: border-box;
 }
 
+.profilTop{
+    position: relative;
+    height: 40px;
+    width: 100%;
+}
+
+.deconnexion{
+    position: absolute;
+    left: 95%;
+    top: 50%;
+    transform: translate(-50% , -50%);
+}
+
+.title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+
 .img{
     height: 150px;
     width: 150px;
@@ -12,12 +32,13 @@
     background-color: white;
 }
 .cover{
+    float: right;
     background-color: #E5E5E5;
     float: right;
-    width: 1236px;
+    width: 80%;
     height: 100vh;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
    
 }
@@ -31,7 +52,6 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    /* border: solid black 2px; */
     border-radius: 20px;
 }
 
@@ -50,11 +70,10 @@
 }
 
 .it{
-    border: solid black 2px;
-    border-radius: 5px;
+    background-color: #E5E5E5;
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
     padding: 0px 5px;
 }
 #change , #edit {
@@ -68,6 +87,14 @@ button{
     border-radius: 7px;
     background-color: #1C263D;
     color: white;
+    transition: all 0.4s;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: #fff;
+    color: #162C5F;
+    transform: scale(1.1);
 }
 
 .userName{

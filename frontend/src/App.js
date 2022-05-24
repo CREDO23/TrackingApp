@@ -1,13 +1,11 @@
 import React from 'react';
-import Profile from './componements/agent/profile/Profile';
-import Sidemenu from './componements/client/sidemenu/Sidemenu'
+import Paccueil from './pages/Paccueil';
 
 
 const App = () => {
   return (
    <>
-    <Sidemenu></Sidemenu>
-    <Profile></Profile>
+   <Paccueil></Paccueil>
    </> 
   );
 };

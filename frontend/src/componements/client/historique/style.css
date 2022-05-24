@@ -1,0 +1,138 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    list-style: none;
+}
+
+.HCTop{
+    min-height: 50px;
+    position: relative;
+    height: 40px;
+    width: 100%;
+}
+
+
+.title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+
+.HCcover{
+    float: right;
+    background-color: #E5E5E5;
+    float: right;
+    width:80%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+
+
+button{
+    padding: 7px;
+    border-radius: 7px;
+    background-color: #1C263D;
+    color: white;
+    transition: all 0.4s;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: #fff;
+    color: #162C5F;
+    transform: scale(1.1);
+}
+
+#deconnexion{
+    position: absolute;
+    left: 95%;
+    top: 50%;
+    transform: translate(-50% , -50%);
+}
+
+
+.HCmiddle{
+    min-height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 20px 0px;
+    background-color: #1c263d;
+}
+
+ul{
+    display: flex;
+    justify-content: space-evenly;
+    width: 40%;
+}
+
+.mois{
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mois span {
+    border: 1px solid black;
+    border-radius: 3px;
+    padding: 5px;
+    background-color: #E5E5E5;
+}
+
+
+.HCmiddle li{
+    color: #E5E5E5;
+  font-weight: 600;
+  font-size: larger;
+  border-bottom: 2px solid #E5E5E5;
+}
+
+.Ctableau{
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+
+table{
+    table-layout: fixed;
+    border-collapse: collapse;
+    width: 100%;
+    margin: 5px;
+    text-align: left;
+    box-shadow: 0.1px 0.1px 5px black;
+    border-radius: 10px;
+}
+
+tr{
+    height: 30px;
+}
+
+tr :nth-child(6){
+    width: 10%;
+}
+
+tr :nth-child(5){
+    width: 30%;
+}
+
+th{
+    height: 40px;
+    background-color: rgb(195, 191, 191);
+    padding: 3px;
+}
+
+td{
+    padding: 3px;
+}
+
+tbody tr:nth-child(even){
+    background-color:rgba(195, 191, 191, 0.362);
+}

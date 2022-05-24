@@ -1,0 +1,123 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.profilTop{
+    position: relative;
+    height: 40px;
+    width: 100%;
+}
+
+.deconnexion{
+    position: absolute;
+    left: 95%;
+    top: 50%;
+    transform: translate(-50% , -50%);
+}
+
+.title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+
+.img{
+    height: 150px;
+    width: 150px;
+    border: black solid 2px;
+    border-radius: 100%;
+    background-color: white;
+}
+.cover{
+    float: right;
+    background-color: #E5E5E5;
+    float: right;
+    width: 1236px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    align-items: center;
+   
+}
+
+.profilContenair{
+    background-color: #F1F1F1;
+    padding: 30px;
+    width: min-content;
+    height: 580px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    /* border: solid black 2px; */
+    border-radius: 20px;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2 , 290px) ;
+    grid-template-rows: repeat(4 , 50px);
+    gap: 5px;
+    grid-template-areas: 
+    "a b"
+    "c d"
+    "e e"
+    "f f"
+    ;
+}
+
+.it{
+    background-color: #E5E5E5;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px 5px;
+}
+#change , #edit {
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+
+button{
+    padding: 7px;
+    border-radius: 7px;
+    background-color: #1C263D;
+    color: white;
+    transition: all 0.4s;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: #fff;
+    color: #162C5F;
+    transform: scale(1.1);
+}
+
+.userName{
+    grid-area: a;
+}
+
+.firstName{
+    grid-area: c;
+}
+
+.lastName{
+    grid-area: d;
+}
+
+.email{
+    grid-area: b;
+}
+
+#change{
+    grid-area: e;
+}
+
+#edit{
+    grid-area: f;
+}

@@ -8,7 +8,7 @@ const Accueil = () => {
                <div className='top'>
                     <h1> Nous acheminons vos biens professionnels,
                     effets personnels, valises diplomatiques par AIR, MER et ROUTE .</h1>
-                    <button>EN SAVOIR PLUS</button>  
+                    <div className='button'>EN SAVOIR PLUS</div>  
                </div>
 
                 <div className='mid'>
@@ -16,12 +16,24 @@ const Accueil = () => {
                     <div className='categories'>
                         <div className='item'>
                             <h4>ENTREPRISES</h4>
+                            <h3>LOGO</h3>
+                            <p>
+                            Agence Fret Cargo transporte vos marchandises en toute sécurité et transparence, par voie aérienne, terrestre et maritime, de la Suisse vers le monde entier et du monde entier vers la Suisse.
+                            </p>
                         </div>
                         <div className='item'>
                             <h4>PARTICULIERS</h4>
+                            <h3>LOGO</h3>
+                            <p>
+                            L'Agence Fret Cargo vous accompagne vers le prochain chapitre de votre vie, en Suisse et dans le monde entier. L'Agence Fret Cargo est une entreprise familiale dotée d'un vaste réseau international et d'un savoir-faire suisse reconnu.
+                            </p>
                         </div>
                         <div className='item'>
                             <h4>DIPLOMATES</h4>
+                            <h3>LOGO</h3>
+                            <p>
+                            L'Agence Fret Cargo, à l'image de la Genève internationale où elle est établie, cultive un sentiment de transparence et de discrétion pour le corps diplomatique international lorsqu'il doit déménager et pour le transport des valises diplomatiques.
+                            </p>
                         </div>
                     </div>
                 </div>

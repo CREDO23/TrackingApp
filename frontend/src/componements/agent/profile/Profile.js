@@ -3,6 +3,14 @@ import './style.css'
 const Profile = () => {
     return (
         <div className='cover'>
+                <div className="profilTop">
+                    <span className="title">
+                        <h3>PROFIL</h3>
+                    </span>
+                    <span className="deconnexion">
+                        <button id="deconnexionn">Déconnexion</button>
+                    </span>
+                </div>
             <div className="profilContenair">
                 <div className="img">
 

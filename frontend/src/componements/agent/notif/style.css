@@ -1,0 +1,94 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.notifTop{
+    position: relative;
+    height: 40px;
+    width: 100%;
+}
+
+.deconnexion{
+    position: absolute;
+    left: 95%;
+    top: 50%;
+    transform: translate(-50% , -50%);
+}
+
+.title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+
+.notifcover{
+    float: right;
+    background-color: #E5E5E5;
+    float: right;
+    width: 80%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+
+.notifContenair{
+    padding: 30px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.notifContenair > div {
+    width: 400px;
+    background-color: #f1f1f1;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.notifContenair > div > div {
+    width: 90%;
+    height: 60%;
+    border:  1px solid black;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 5px;
+    background-color: #E5E5E5
+}
+
+/* .notifContenair > div > div div{
+    width: 45%;
+    height: 90%;
+    border: 1px solid black;
+    background-color: #f1f1f1;
+} */
+
+button{
+    padding: 7px;
+    border-radius: 7px;
+    background-color: #1C263D;
+    color: white;
+    transition: all 0.4s;
+}
+
+button:hover{
+    margin: 0;
+    cursor: pointer;
+    background-color: #fff;
+    color: #162C5F;
+    transform: scale(1.1);
+}
+
