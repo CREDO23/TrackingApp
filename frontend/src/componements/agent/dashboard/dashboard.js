@@ -3,7 +3,7 @@ import './style.css'
 
 const Dashboard = () => {
     return (
-        <div className='dashcover'>
+        <div className='agentDashCover'>
         <div className="dashTop">
             <span className="title">
                 <h3>DASHBOARD</h3>

@@ -1,15 +1,18 @@
 import React from 'react';
+import {faRightFromBracket} from '@fortawesome/free-solid-svg-icons'
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import './style.css'
 
 const newExp = () => {
     return (
-        <div className='cover'>
+        <div className='expcover'>
         <div className="profilTop">
             <span className="title">
                 <h3>Nouvelle EXP</h3>
             </span>
             <span className="deconnexion">
-                <button id="deconnexionn">Déconnexion</button>
+            <h4>Déconnexion</h4>
+            <FontAwesomeIcon icon={faRightFromBracket}/>
             </span>
         </div>
     <div className="profilContenair">

@@ -7,7 +7,7 @@
     text-decoration: none;
 }
 
-.left , .right {
+.contenair .left ,.contenair .right {
     font-size: 16px;
     font-weight: 600;
     line-height: 20px;
@@ -18,14 +18,14 @@
     width: 10% ;
 }
 
-a{
+.contenair a{
     color: black;
     border: 1px solid black;
     padding: 10px;
     border-radius: 5px;
 }
 
-.middle{
+.contenair .middle{
     font-size: 16px;
     font-weight: 600;
     line-height: 20px;

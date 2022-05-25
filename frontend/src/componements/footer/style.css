@@ -1,4 +1,5 @@
 .fcontenair{
+    position: relative;
     height: 491px;
     display: flex;
     justify-content: space-around;
@@ -13,6 +14,16 @@
     width: 75%;
     display: flex;
     justify-content: space-evenly;
+}
+
+.Footcover{
+    width: 100vw;
+    height: 491px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    z-index: 3;
+    background-color:rgba(22,45,95,0.5);
 }
 
 .contact{

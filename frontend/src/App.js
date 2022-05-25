@@ -1,11 +1,10 @@
 import React from 'react';
-import Paccueil from './pages/Paccueil';
-
+import Paccueil from './pages/Paccueil'
 
 const App = () => {
   return (
    <>
-   <Paccueil></Paccueil>
+    <Paccueil></Paccueil>
    </> 
   );
 };

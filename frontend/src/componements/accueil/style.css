@@ -7,33 +7,36 @@
 }
 
 
-h1{
-    color: rgb(23, 23, 24);
+.accueilTop h1{
+    color: white;
     font-size: 48px;
     text-align: center;
     font-weight: 700;
     line-height: 50px;
+    z-index: 4;
 }
-h4{
+.accueilMid h4 , .accueilBottom h4{
     text-align: center;
     font-size: 24px;
     font-weight:300;
     line-height: 29px;
     margin-top: 10px;
 }
-h3{
+.accueilMid  h3{
     font-size: 32px;
     font-weight: 600;
     line-height: 38px;
 }
 
-.button{
+.accueilButton{
    height:  50px;
    width: 150px;
    font-size: 16px;
    font-weight: 600;
    line-height: 20px;
-   border: solid black 2px;
+   border: solid white 2px;
+   color: white;
+   z-index: 4;
    border-radius: 7px;
    display: flex;
    justify-content: center;
@@ -41,12 +44,24 @@ h3{
    transition:  all 0.4s;
    }
 
-.button:hover{
+.accueilButton:hover{
     background-color: rgba(255, 255, 255, 0.619);
     border: white solid 2px;
+    color: black;
 }
 
-.top{
+.Pacover{
+    width: 100vw;
+    height: 900px;
+    position: absolute;
+    top: 70px;
+    left: 0px;
+    z-index: 3;
+    background-color:rgba(22,45,95,0.5);
+}
+
+
+.accueilTop{
     position: relative;
     height: 900px;
     display: flex;
@@ -59,7 +74,7 @@ h3{
     background-repeat: no-repeat;
 }
 
-.mid{
+.accueilMid{
     height: 468px;
     display: flex;
     flex-direction: column;
@@ -67,7 +82,7 @@ h3{
     align-items: center;
 }
 
-.bottom{
+.accueilBottom{
     color: aliceblue;
     font-size: 24px;
     font-weight: 600;
@@ -87,7 +102,7 @@ h3{
     align-items: center;
 }
 
-.item{
+.accueilItem{
     width: 445px;
     height: 280px;
     background-color: #c4c4c4a1;
@@ -97,6 +112,3 @@ h3{
     justify-content: space-between;
 }
 
-.item p{
-    
-}

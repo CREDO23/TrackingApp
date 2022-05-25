@@ -6,24 +6,24 @@
     outline: none;
     
 }
-form{
+.agent{
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     background: linear-gradient(#162C5F,#7C90AD);
 }
 
-.icon{
-    height: 100px;
+.agent .icon{
+    /* height: 100px;
     width: 100px;
     margin: 20px;
     border-radius: 100%;
-    background-color: rgba(255, 255, 255, 0.575);
+    background-color: rgba(255, 255, 255, 0.575); */
 }
 
- .form{
+ .agentForm{
      display: grid;
      grid-template-columns: 300px;
      grid-template-rows: repeat(auto , 50px);
@@ -34,18 +34,8 @@ form{
     background-color: rgba(255, 255, 255, 0.559);
 }
 
-span{
-    margin: 20px;
-    color: white;
-    border-bottom: white 2px solid;
-}
 
-span:hover{
-    cursor: pointer;
-}
-
-
-input{
+.agentForm input{
     color: white;
     padding: 3px 10px;
     height: 35px;
@@ -56,19 +46,19 @@ input{
     background-color: #192c49;
 }
 
-input[type="submit"]{
+.agentForm input[type="submit"]{
     width: min-content;
     transition: all 0.4s;
 }
 
-input[type="submit"]:hover{
+.agentForm input[type="submit"]:hover{
     cursor: pointer;
     background-color: #fff;
     color: #162C5F;
     transform: scale(1.1);
 }
 
-.btn{
+.agentForm .btn{
     display: flex;
     justify-content: center;
 }

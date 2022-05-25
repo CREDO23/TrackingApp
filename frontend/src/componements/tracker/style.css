@@ -1,0 +1,126 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    
+}
+
+.trackCover .profilTop{
+    position: relative;
+    height: 40px;
+    width: 100%;
+}
+
+
+.title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+
+.trackCover{
+    float: right;
+    background-color: #E5E5E5;
+    float: right;
+    width: 80%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+
+.trackCover .profilContenair{
+    background-color: #F1F1F1;
+    padding: 30px;
+    width: min-content;
+    height: 580px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.trackCover .grid{
+    display: grid;
+    grid-template-columns: 580px ;
+    grid-template-rows: repeat(3 , 50px);
+    gap: 5px;
+    grid-template-areas: 
+    "c c"
+    "b b"
+    "e e"
+    ;
+}
+
+.trackCover .it{
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 5px;
+    width: 100%;
+    letter-spacing: 2px;
+}
+.trackCover #submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+
+.trackCover input{
+    padding: 3px 10px;
+    height: 35px;
+    margin: 10px 0px;
+    border-radius: 7px;
+    width: 100%;
+    border: solid black 2px;
+}
+
+.trackCover input[type="submit"]{
+    color: #fff;
+    width: min-content;
+    transition: all 0.4s;
+    background-color: #162C5F;
+}
+
+.trackCover input[type="submit"]:hover{
+    cursor: pointer;
+    background-color: #fff;
+    color: #162C5F;
+    transform: scale(1.1);
+}
+
+.trackCover button{
+    padding: 7px;
+    border-radius: 7px;
+    background-color: #1C263D;
+    color: white;
+    transition: all 0.4s;
+}
+
+.trackCover button:hover{
+    cursor: pointer;
+    background-color: #fff;
+    color: #162C5F;
+    transform: scale(1.1);
+}
+
+#deconnexion{
+    position: absolute;
+    left: 95%;
+    top: 50%;
+    transform: translate(-50% , -50%);
+}
+
+.trackCover .key{
+    grid-area: c;
+}
+
+
+.trackCover #submit{
+    grid-area: e;
+}

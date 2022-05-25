@@ -1,13 +1,16 @@
 import React from 'react';
+import {faCircleUser } from '@fortawesome/free-solid-svg-icons'
+import {FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import './style.css'
+
 
 const Connexion = () => {
     return (
        <>
-       <form action="">
-           <div className="icon">
-
-           </div>
+       <form className='clientConnexion' action="">
+           <div className='icon'> 
+            <FontAwesomeIcon icon={faCircleUser} color="#E5E5E5" size="6x"/>
+           </div> 
            <div className='choix'>
                <span>S'inscrire</span>
                <span>Se connecter</span>

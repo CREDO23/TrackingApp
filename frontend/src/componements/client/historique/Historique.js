@@ -1,4 +1,6 @@
 import React from 'react';
+import {faRightFromBracket} from '@fortawesome/free-solid-svg-icons'
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import './style.css'
 
 const Historique = () => {
@@ -9,7 +11,8 @@ const Historique = () => {
                 <h3>HISTORIQUE</h3>
             </span>
             <span id="deconnexion">
-                <button>Déconnexion</button>
+                <h4>Déconnexion</h4>
+            <FontAwesomeIcon icon={faRightFromBracket}/>
             </span>
         </div>
         <div className="HCmiddle">

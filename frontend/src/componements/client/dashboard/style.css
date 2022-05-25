@@ -6,7 +6,7 @@
     list-style: none;
 }
 
-.dashTop{
+.Cdashcover .dashTop{
     min-height: 50px;
     position: relative;
     height: 40px;
@@ -21,7 +21,7 @@
     transform: translate(-50% , -50%);
 }
 
-.dashcover{
+.Cdashcover{
     float: right;
     background-color: #E5E5E5;
     float: right;
@@ -33,14 +33,14 @@
     justify-content: space-between;
 }
 
-.dash{
+.Cdashcover .dash{
     width: 100%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
 
-.expeditions , .livraisons {
+.Cdashcover .expeditions , .Cdashcover .livraisons {
     text-align: left;
     width: 20%;
     display: flex;
@@ -50,7 +50,7 @@
     
 }
 
-.expeditions div , .livraisons div {
+.Cdashcover .expeditions div ,.Cdashcover .livraisons div {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -62,22 +62,22 @@
     border-radius: 7px;
 }
 
-.bot :nth-child(1) {
+.Cdashcover .bot :nth-child(1) {
 
     margin: 0px 10px;
 }
 
-.expeditions span , .livraisons span {
+.Cdashcover .expeditions span ,.Cdashcover .livraisons span {
     margin: 10px;
     letter-spacing: 1px;
 }
 
-.expeditions > span , .livraisons > span , .bot > div > span {
+.Cdashcover .expeditions > span ,.Cdashcover .livraisons > span ,.Cdashcover .bot > div > span {
     font-size: medium;
     font-size: 24px;
 }
 
-button{
+.Cdashcover button{
     padding: 7px;
     border-radius: 7px;
     background-color: #1C263D;
@@ -85,7 +85,7 @@ button{
     transition: all 0.4s;
 }
 
-button:hover{
+.Cdashcover button:hover{
     cursor: pointer;
     background-color: #fff;
     color: #162C5F;
@@ -97,17 +97,22 @@ button:hover{
     left: 95%;
     top: 50%;
     transform: translate(-50% , -50%);
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    font-weight:500;
+    width: 110px;
 }
 
 
-.dashtableau{
+.Cdashcover .dashtableau{
     overflow: auto;
     overflow-x: hidden;
     height: 300px;
 }
 
 
-table{
+.Cdashcover table{
     table-layout: fixed;
     border-collapse: collapse;
     width: 100%;
@@ -117,28 +122,28 @@ table{
     border-radius: 10px;
 }
 
-tr{
+.Cdashcover tr{
     height: 30px;
 }
 
-tr :nth-child(6){
+.Cdashcover tr :nth-child(6){
     width: 10%;
 }
 
-tr :nth-child(5){
+.Cdashcover tr :nth-child(5){
     width: 30%;
 }
 
-th{
+.Cdashcover th{
     height: 40px;
     background-color: rgb(195, 191, 191);
     padding: 3px;
 }
 
-td{
+.Cdashcover td{
     padding: 3px;
 }
 
-tbody tr:nth-child(even){
+.Cdashcover tbody tr:nth-child(even){
     background-color:rgba(195, 191, 191, 0.362);
 }

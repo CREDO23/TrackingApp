@@ -1,15 +1,18 @@
 import React from 'react';
+import {faRightFromBracket} from '@fortawesome/free-solid-svg-icons'
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import './style.css'
 
 const Misajour = () => {
     return (
-        <div className='cover'>
+        <div className='msjcover'>
         <div className="profilTop">
             <span className="title">
                 <h3>MIS À JOUR</h3>
             </span>
             <span id="deconnexion">
-                <button>Déconnexion</button>
+                <h4>Déconnexion</h4>
+            <FontAwesomeIcon icon={faRightFromBracket}/>
             </span>
         </div>
     <form className="profilContenair">

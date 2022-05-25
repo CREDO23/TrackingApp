@@ -16,14 +16,14 @@
     background-color: #1C263D;
 }
 
-.imgProfile{
+.sidemenuA .imgProfile{
     height: 150px;
     width: 150px;
     border-radius: 100%;
     background-color: #fff;
 }
 
-.topA{
+.sidemenuA .topA{
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
@@ -31,14 +31,14 @@
     height: 250px;
 }
 
-.bottomA{
+.sidemenuA .bottomA{
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
     align-items: center;
 }
 
-.menu{
+.sidemenuA .menu{
     border-radius: 7px;
     background-color: #fff;
     color: black;
@@ -46,10 +46,11 @@
     margin: 7px 0px;
     height: 40px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    padding:0px 10px;
 }
 
-.menu:hover{
+.sidemenuA .menu:hover{
     transform: scale(1.1);
 }

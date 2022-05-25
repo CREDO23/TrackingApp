@@ -5,7 +5,7 @@
     outline: none;
 }
 
-.profilTop{
+.msjcover .profilTop{
     position: relative;
     height: 40px;
     width: 100%;
@@ -19,7 +19,7 @@
     transform: translate(-50% , -50%);
 }
 
-.cover{
+.msjcover{
     float: right;
     background-color: #E5E5E5;
     float: right;
@@ -31,7 +31,7 @@
    
 }
 
-.profilContenair{
+.msjcover .profilContenair{
     background-color: #F1F1F1;
     padding: 30px;
     width: min-content;
@@ -43,7 +43,7 @@
     border-radius: 20px;
 }
 
-.grid{
+.msjcover .grid{
     display: grid;
     grid-template-columns: repeat(2 , 290px) ;
     grid-template-rows: repeat(5 , 50px);
@@ -57,20 +57,20 @@
     ;
 }
 
-.it{
+.msjcover .it{
     border-radius: 5px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     padding: 0px 5px;
 }
-#submit {
+.msjcover #submit {
     display: flex;
     justify-content: center;
     align-items: center;  
 }
 
-input{
+.msjcover input{
     padding: 3px 10px;
     height: 35px;
     margin: 10px 0px;
@@ -79,21 +79,21 @@ input{
     border: solid black 2px;
 }
 
-input[type="submit"]{
+.msjcover input[type="submit"]{
     color: #fff;
     width: min-content;
     transition: all 0.4s;
     background-color: #162C5F;
 }
 
-input[type="submit"]:hover{
+.msjcover input[type="submit"]:hover{
     cursor: pointer;
     background-color: #fff;
     color: #162C5F;
     transform: scale(1.1);
 }
 
-button{
+.msjcover button{
     padding: 7px;
     border-radius: 7px;
     background-color: #1C263D;
@@ -101,7 +101,7 @@ button{
     transition: all 0.4s;
 }
 
-button:hover{
+.msjcover button:hover{
     cursor: pointer;
     background-color: #fff;
     color: #162C5F;
@@ -113,16 +113,21 @@ button:hover{
     left: 95%;
     top: 50%;
     transform: translate(-50% , -50%);
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    font-weight:500;
+    width: 110px;
 }
 
-.from{
+.msjcover .from{
     grid-area: a;
 }
 
-.to{
+.msjcover .to{
     grid-area: b;
 }
 
-#submit{
+.msjcover #submit{
     grid-area: g;
 }

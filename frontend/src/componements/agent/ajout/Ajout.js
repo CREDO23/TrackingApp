@@ -1,14 +1,16 @@
 import React from 'react';
+import {faCircleUser } from '@fortawesome/free-solid-svg-icons'
+import {FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import './style.css'
 
 const Ajout = () => {
     return (
         <>
-        <form action="">
+        <form className='agent' action="">
             <div className="icon">
- 
+            <FontAwesomeIcon icon={faCircleUser} color="#E5E5E5" size="5x"/>
             </div>
-            <div className="form">
+            <div className="agentForm">
             <div>
                 <input type="text" placeholder="userName" name="userName" id="userName" />
             </div>

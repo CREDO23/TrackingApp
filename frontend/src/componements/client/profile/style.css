@@ -4,17 +4,22 @@
     box-sizing: border-box;
 }
 
-.profilTop{
+.clientProfilcover .profilTop{
     position: relative;
     height: 40px;
     width: 100%;
 }
 
-.deconnexion{
+.clientProfilcover .deconnexion{
     position: absolute;
     left: 95%;
     top: 50%;
     transform: translate(-50% , -50%);
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    font-weight:500;
+    width: 110px;
 }
 
 .title{
@@ -24,14 +29,14 @@
     transform: translate(-50% , -50%);
 }
 
-.img{
+.clientProfilcover .img{
     height: 150px;
     width: 150px;
     border: black solid 2px;
     border-radius: 100%;
     background-color: white;
 }
-.cover{
+.clientProfilcover{
     float: right;
     background-color: #E5E5E5;
     float: right;
@@ -44,7 +49,7 @@
    
 }
 
-.profilContenair{
+.clientProfilcover .profilContenair{
     background-color: #F1F1F1;
     padding: 30px;
     width: min-content;
@@ -57,7 +62,7 @@
     border-radius: 20px;
 }
 
-.grid{
+.clientProfilcover .grid{
     display: grid;
     grid-template-columns: repeat(2 , 290px) ;
     grid-template-rows: repeat(4 , 50px);
@@ -70,20 +75,20 @@
     ;
 }
 
-.it{
+.clientProfilcover .it{
     background-color: #E5E5E5;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     padding: 0px 5px;
 }
-#change , #edit {
+.clientProfilcover #change ,.clientProfilcover #edit {
     display: flex;
     justify-content: center;
     align-items: center;  
 }
 
-button{
+.clientProfilcover button{
     padding: 7px;
     border-radius: 7px;
     background-color: #1C263D;
@@ -91,33 +96,33 @@ button{
     transition: all 0.4s;
 }
 
-button:hover{
+.clientProfilcover button:hover{
     cursor: pointer;
     background-color: #fff;
     color: #162C5F;
     transform: scale(1.1);
 }
 
-.userName{
+.clientProfilcover .userName{
     grid-area: a;
 }
 
-.firstName{
+.clientProfilcover .firstName{
     grid-area: c;
 }
 
-.lastName{
+.clientProfilcover .lastName{
     grid-area: d;
 }
 
-.email{
+.clientProfilcover .email{
     grid-area: b;
 }
 
-#change{
+.clientProfilcover #change{
     grid-area: e;
 }
 
-#edit{
+.clientProfilcover #edit{
     grid-area: f;
 }

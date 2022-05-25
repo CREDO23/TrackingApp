@@ -6,7 +6,7 @@
     list-style: none;
 }
 
-.HCTop{
+.HCcover .HCTop{
     min-height: 50px;
     position: relative;
     height: 40px;
@@ -34,7 +34,7 @@
 }
 
 
-button{
+.HCcover button{
     padding: 7px;
     border-radius: 7px;
     background-color: #1C263D;
@@ -42,7 +42,7 @@ button{
     transition: all 0.4s;
 }
 
-button:hover{
+.HCcover button:hover{
     cursor: pointer;
     background-color: #fff;
     color: #162C5F;
@@ -54,10 +54,16 @@ button:hover{
     left: 95%;
     top: 50%;
     transform: translate(-50% , -50%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    font-weight:500;
+    width: 110px;
 }
 
 
-.HCmiddle{
+.HCcover .HCmiddle{
     min-height: 50px;
     display: flex;
     justify-content: space-between;
@@ -67,20 +73,20 @@ button:hover{
     background-color: #1c263d;
 }
 
-ul{
+.HCcover ul{
     display: flex;
     justify-content: space-evenly;
     width: 40%;
 }
 
-.mois{
+.HCcover .mois{
     width: 25%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.mois span {
+.HCcover .mois span {
     border: 1px solid black;
     border-radius: 3px;
     padding: 5px;
@@ -88,20 +94,20 @@ ul{
 }
 
 
-.HCmiddle li{
+.HCcover .HCmiddle li{
     color: #E5E5E5;
   font-weight: 600;
   font-size: larger;
   border-bottom: 2px solid #E5E5E5;
 }
 
-.Ctableau{
+.HCcover .Ctableau{
     overflow: auto;
     overflow-x: hidden;
 }
 
 
-table{
+.HCcover table{
     table-layout: fixed;
     border-collapse: collapse;
     width: 100%;
@@ -111,28 +117,28 @@ table{
     border-radius: 10px;
 }
 
-tr{
+.HCcover tr{
     height: 30px;
 }
 
-tr :nth-child(6){
+.HCcover tr :nth-child(6){
     width: 10%;
 }
 
-tr :nth-child(5){
+.HCcover tr :nth-child(5){
     width: 30%;
 }
 
-th{
+.HCcover th{
     height: 40px;
     background-color: rgb(195, 191, 191);
     padding: 3px;
 }
 
-td{
+.HCcover td{
     padding: 3px;
 }
 
-tbody tr:nth-child(even){
+.HCcover tbody tr:nth-child(even){
     background-color:rgba(195, 191, 191, 0.362);
 }

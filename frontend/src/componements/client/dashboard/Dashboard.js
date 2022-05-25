@@ -1,15 +1,18 @@
 import React from 'react';
 import './style.css'
+import {faRightFromBracket} from '@fortawesome/free-solid-svg-icons'
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 
 const Dashboard = () => {
     return (
-        <div className='dashcover'>
+        <div className='Cdashcover'>
         <div className="dashTop">
             <span className="title">
                 <h3>DASHBOARD</h3>
             </span>
             <span id="deconnexion">
-                <button>Déconnexion</button>
+            <h4>Déconnexion</h4>
+            <FontAwesomeIcon icon={faRightFromBracket}/>
             </span>
         </div>
         <div className="dash">

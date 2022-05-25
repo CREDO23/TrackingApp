@@ -4,6 +4,8 @@ import './style.css'
 const Footer = () => {
     return (
         <div className='fcontenair'>
+         <div className="Footcover"></div>
+
            <div className='fleft'>
            <div className='card'>
                 <h4>À PROPOS</h4>

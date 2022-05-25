@@ -6,7 +6,7 @@
     list-style: none;
 }
 
-.HTop{
+.agentHcover .HTop{
     min-height: 50px;
     position: relative;
     height: 40px;
@@ -21,7 +21,7 @@
     transform: translate(-50% , -50%);
 }
 
-.Hcover{
+.agentHcover{
     float: right;
     background-color: #E5E5E5;
     float: right;
@@ -34,7 +34,7 @@
 }
 
 
-button{
+.agentHcover button{
     padding: 7px;
     border-radius: 7px;
     background-color: #1C263D;
@@ -42,7 +42,7 @@ button{
     transition: all 0.4s;
 }
 
-button:hover{
+.agentHcover button:hover{
     cursor: pointer;
     background-color: #fff;
     color: #162C5F;
@@ -54,10 +54,15 @@ button:hover{
     left: 95%;
     top: 50%;
     transform: translate(-50% , -50%);
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    font-weight:500;
+    width: 110px;
 }
 
 
-.Hmiddle{
+.agentHcover .Hmiddle{
     min-height: 50px;
     display: flex;
     justify-content: space-between;
@@ -67,20 +72,20 @@ button:hover{
     background-color: #1c263d;
 }
 
-ul{
+.agentHcover ul{
     display: flex;
     justify-content: space-evenly;
     width: 40%;
 }
 
-.mois{
+.agentHcover .mois{
     width: 25%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.mois span {
+.agentHcover .mois span {
     border: 1px solid black;
     border-radius: 3px;
     padding: 5px;
@@ -88,20 +93,20 @@ ul{
 }
 
 
-.Hmiddle li{
+.agentHcover .Hmiddle li{
     color: #E5E5E5;
   font-weight: 600;
   font-size: larger;
   border-bottom: 2px solid #E5E5E5;
 }
 
-.tableau{
+.agentHcover .tableau{
     overflow: auto;
     overflow-x: hidden;
 }
 
 
-table{
+.agentHcover table{
     table-layout: fixed;
     border-collapse: collapse;
     width: 100%;
@@ -111,28 +116,28 @@ table{
     border-radius: 10px;
 }
 
-tr{
+.agentHcover tr{
     height: 30px;
 }
 
-tr :nth-child(5){
+.agentHcover tr :nth-child(5){
     width: 10%;
 }
 
-tr :nth-child(4){
+.agentHcover tr :nth-child(4){
     width: 30%;
 }
 
-th{
+.agentHcover th{
     height: 40px;
     background-color: rgb(195, 191, 191);
     padding: 3px;
 }
 
-td{
+.agentHcover td{
     padding: 3px;
 }
 
-tbody tr:nth-child(even){
+.agentHcover tbody tr:nth-child(even){
     background-color:rgba(195, 191, 191, 0.362);
 }
