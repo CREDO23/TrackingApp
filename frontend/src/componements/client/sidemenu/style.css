@@ -8,7 +8,7 @@
     float: left;
     color: #fff;
     width: 20%;
-    height: 712px;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-around;

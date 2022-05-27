@@ -59,8 +59,11 @@ form{
     align-items: center;
     margin: 20px;
     color: white;
-    text-decoration: underline;
     }
+
+.soulign{
+    text-decoration: underline;
+}
 
 .clientConnexion input{
     color: white;

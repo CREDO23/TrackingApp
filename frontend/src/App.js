@@ -1,12 +1,14 @@
+/** @format */
+
 import React from 'react';
-import Paccueil from './pages/Paccueil'
+import Routes from './componements/Routes';
 
 const App = () => {
-  return (
-   <>
-    <Paccueil></Paccueil>
-   </> 
-  );
+	return (
+		<>
+			<Routes></Routes>
+		</>
+	);
 };
 
 export default App;

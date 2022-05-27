@@ -30,7 +30,7 @@
 
 .accueilButton{
    height:  50px;
-   width: 150px;
+   width: 200px;
    font-size: 16px;
    font-weight: 600;
    line-height: 20px;
@@ -54,6 +54,7 @@
     width: 100vw;
     height: 900px;
     position: absolute;
+    overflow-x: hidden;
     top: 70px;
     left: 0px;
     z-index: 3;
@@ -111,4 +112,5 @@
     text-align: center;
     justify-content: space-between;
 }
+
 
