@@ -62,7 +62,8 @@ form{
     }
 
 .soulign{
-    text-decoration: underline;
+    border: 1px solid white;
+    border-radius: 5px;
 }
 
 .clientConnexion input{

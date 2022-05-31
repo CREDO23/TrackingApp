@@ -14,8 +14,8 @@ const index = () => {
 			<Routes>
 				<Route path='/' element={<Paccueil />} />
 				<Route path='/client' element={<DashboardClient />} />
-				<Route path='agent' element={<DashboardAgent />} />
-				<Route path='connexion' element={<Connexion />} />
+				<Route path='/agent' element={<DashboardAgent />} />
+				<Route path='/connexion' element={<Connexion />} />
 			</Routes>
 		</BrowserRouter>
 	);

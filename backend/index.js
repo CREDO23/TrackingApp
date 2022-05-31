@@ -50,13 +50,11 @@ allOfficer(app);
 
 const {
 	createShipping,
-	updateShippingMobile,
 	deleteShipping,
 	shippingInfo,
 	allShipping,
 } = require('./src/routes/registrations/regShipping');
 createShipping(app);
-updateShippingMobile(app);
 deleteShipping(app);
 shippingInfo(app);
 allShipping(app);
@@ -85,15 +83,15 @@ const {
 	authentification,
 } = require('./src/middlewares/authentification.js');
 
-// app.get('*', authentification);
-// app.put('*', authentification);
+app.get('*', authentification);
+app.put('*', authentification);
 
 // jwtUser
 app.get('/jwtUser', (req, res) => {
 	if (res.locals.user) {
 		res.send(res.locals.user);
 	} else {
-		res.send('No token');
+		res.send('No token credo');
 	}
 });
 

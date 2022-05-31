@@ -18,18 +18,6 @@ const Connexion = () => {
 	const handleConnexion = async (e) => {
 		e.preventDefault();
 
-		// await axios({
-		// 	method: 'get',
-		// 	withCredentials: true,
-		// 	url: `${process.env.REACT_APP_API_URL}jwtUser`,
-		// }).then((res) => {
-		// 	if (res.data === 'No token') {
-		// 		window.location = '/';
-		// 	} else {
-		// 		console.log(res.data);
-		// 	}
-		// });
-
 		await axios({
 			method: 'post',
 			withCredentials: true,
