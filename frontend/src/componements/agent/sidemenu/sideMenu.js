@@ -8,7 +8,6 @@ import {
 	faUser,
 	faCirclePlus,
 	faMessage,
-	faArrowsRotate,
 } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './style.css';
