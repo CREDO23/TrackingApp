@@ -29,9 +29,9 @@ const Connexion = () => {
 		})
 			.then((res) => {
 				if (res.data.user === 'client') {
-					window.location = '/client';
+					window.location = '/client/dashboard';
 				} else if (res.data.user === 'agent') {
-					window.location = '/agent';
+					window.location = '/agent/dashboard';
 				}
 			})
 			.catch((err) => console.log(err));

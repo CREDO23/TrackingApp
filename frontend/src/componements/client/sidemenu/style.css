@@ -39,11 +39,11 @@
     width: 100%;
 }
 
-.sidemenuC .menu{
+.sidemenuC .item{
     border-radius: 7px;
     background-color: #fff;
     color: black;
-    width: 90%;
+    width: 250px;
     margin: 7px 0px;
     height: 40px;
     display: flex;
@@ -52,6 +52,6 @@
     padding:0px 10px;
 }
 
-.sidemenuC .menu:hover{
+.sidemenuC .item:hover{
     transform: scale(1.1);
 }

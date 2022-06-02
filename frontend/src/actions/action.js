@@ -10,27 +10,29 @@ export const GET_SHIPPINGS = 'GET_SHIPPINGS';
 
 export const getUser = (user) => {
 	return async (dispatch) => {
+		var custom;
+		var officer;
+		await axios({
+			method: 'get',
+			url: `${process.env.REACT_APP_API_URL}api/customerInfo/${user}`,
+			withCredentials: true,
+		})
+			.then((res) => {
+				custom = res.data;
+			})
+			.catch((err) => console.log(err));
 		await axios({
 			method: 'get',
 			url: `${process.env.REACT_APP_API_URL}api/officerInfo/${user}`,
 			withCredentials: true,
 		})
 			.then((res) => {
-				if (res != null) {
-					dispatch({ type: GET_USER, payload: res.data });
-				} else {
-					axios({
-						method: 'get',
-						url: `${process.env.REACT_APP_API_URL}/api/customerInfo/${user}`,
-						withCredentials: true,
-					})
-						.then((res) =>
-							dispatch({ type: GET_USER, payload: res.data }),
-						)
-						.catch((err) => console.log(err));
-				}
+				officer = res.data;
 			})
 			.catch((err) => console.log(err));
+
+		if (custom) dispatch({ type: GET_USER, payload: custom });
+		if (officer) dispatch({ type: GET_USER, payload: officer });
 	};
 };
 
@@ -51,27 +53,23 @@ export const newExp = (
 	sender,
 	recipient,
 	mobile,
-	shippingCity,
 	destinationCity,
-	author,
 	packageType,
 ) => {
 	return async (dispatch) => {
 		const res = await axios({
 			method: 'post',
-			url: `${process.env.REACT_APP_API_URL}api/officerInfo/${user}`,
+			url: `${process.env.REACT_APP_API_URL}api/createShipping/${user}`,
 			withCredentials: true,
 			data: {
 				sender,
 				recipient,
 				mobile,
-				shippingCity,
 				destinationCity,
-				author,
 				packageType,
 			},
 		});
-
+		console.log(res.data.shipping);
 		return dispatch({ type: NEW_EXP, payload: res.data.shipping });
 	};
 };
@@ -89,27 +87,27 @@ export const docking = (user, mobile) => {
 	};
 };
 
-export const takeoff = (user, mobile) => {
-	return async (dispatch) => {
-		await axios({
-			method: 'get',
-			url: `${process.env.REACT_APP_API_URL}api/notification/planeTakeOff/${user}`,
-			withCredentials: true,
-			data: { mobile },
-		});
+// export const takeoff = (user, mobile) => {
+// 	return async (dispatch) => {
+// 		await axios({
+// 			method: 'get',
+// 			url: `${process.env.REACT_APP_API_URL}api/notification/planeTakeOff/${user}`,
+// 			withCredentials: true,
+// 			data: { mobile },
+// 		});
 
-		return dispatch({ type: NOTIF_TAKEOFF });
-	};
-};
+// 		return dispatch({ type: NOTIF_TAKEOFF });
+// 	};
+// };
 
-export const tracker = (key) => {
-	return async (dispatch) => {
-		const res = await axios({
-			method: 'get',
-			url: `${process.env.REACT_APP_API_URL}api/customer/track/${key}`,
-			withCredentials: true,
-		});
+// export const tracker = (key) => {
+// 	return async (dispatch) => {
+// 		const res = await axios({
+// 			method: 'get',
+// 			url: `${process.env.REACT_APP_API_URL}api/customer/track/${key}`,
+// 			withCredentials: true,
+// 		});
 
-		return dispatch({ type: TRACKER, payload: res.data });
-	};
-};
+// 		return dispatch({ type: TRACKER, payload: res.data });
+// 	};
+// };

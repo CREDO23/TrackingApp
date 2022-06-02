@@ -1,10 +1,17 @@
 /** @format */
 
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import DashboardClient from '../../pages/Pclient';
-import DashboardAgent from '../../pages/Pagent';
+import Client from '../../pages/Pclient';
+import Agent from '../../pages/Pagent';
+import HistoriqueAgent from '../../pages/PhistoriqueAgent';
+import HistoriqueClient from '../../pages/PhistoriqueClient';
+import ProfilClient from '../../pages/PprofilClient';
+import ProfilAgent from '../../pages/PprofilAgent';
+import TrackerAgent from '../../pages/PtrackerAgent';
+import TrackerClient from '../../pages/PtrackerClient';
+import Aviser from '../../pages/Paviser';
+import NewExp from '../../pages/PnewExp';
 import Paccueil from '../../pages/Paccueil';
-// import Navbar from '../navbar/Navbar';
 import React from 'react';
 import Connexion from '../client/connexion/Connection';
 
@@ -13,8 +20,22 @@ const index = () => {
 		<BrowserRouter>
 			<Routes>
 				<Route path='/' element={<Paccueil />} />
-				<Route path='/client' element={<DashboardClient />} />
-				<Route path='/agent' element={<DashboardAgent />} />
+				<Route
+					path='/client/historique'
+					element={<HistoriqueClient />}
+				/>
+				<Route path='/client/profil' element={<ProfilClient />} />
+				<Route path='/client/dashboard' element={<Client />} />
+				<Route path='/client/tracker' element={<TrackerClient />} />
+				<Route
+					path='/agent/historique'
+					element={<HistoriqueAgent />}
+				/>
+				<Route path='/agent/newExp' element={<NewExp />} />
+				<Route path='/agent/profil' element={<ProfilAgent />} />
+				<Route path='/agent/tracker' element={<TrackerAgent />} />
+				<Route path='/agent/aviser' element={<Aviser />} />
+				<Route path='/agent/dashboard' element={<Agent />} />
 				<Route path='/connexion' element={<Connexion />} />
 			</Routes>
 		</BrowserRouter>
