@@ -12,7 +12,7 @@
 
 .agentCover .deconnexion{
     position: absolute;
-    left: 95%;
+    left: 93%;
     top: 50%;
     transform: translate(-50% , -50%);
     display: flex;
@@ -99,7 +99,7 @@
     cursor: pointer;
     background-color: #fff;
     color: #162C5F;
-    transform: scale(1.1);
+    border: 2px solid #162C5F;
 }
 
 .agentCover .userName{

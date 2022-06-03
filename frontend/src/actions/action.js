@@ -69,7 +69,6 @@ export const newExp = (
 				packageType,
 			},
 		});
-		console.log(res.data.shipping);
 		return dispatch({ type: NEW_EXP, payload: res.data.shipping });
 	};
 };

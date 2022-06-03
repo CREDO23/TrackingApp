@@ -19,12 +19,9 @@ const NewExp = () => {
 	const user = useSelector((state) => state.userReducer).userName;
 
 	const handleSubmit = async (e) => {
-		e.preventDefault();
-
 		dispatch(
 			newExp(user, expediteur, destinataire, mobile, villeDest, type),
 		);
-		// window.location.reload();
 	};
 	return (
 		<div className='expcover'>

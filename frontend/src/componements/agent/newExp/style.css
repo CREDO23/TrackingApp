@@ -1,3 +1,4 @@
+
 *{
     padding: 0;
     margin: 0;
@@ -13,10 +14,11 @@
 
 .expcover .deconnexion{
     position: absolute;
-    left: 95%;
+    left: 93%;
     top: 50%;
     transform: translate(-50% , -50%);
     display: flex;
+    align-items: center;
     justify-content: space-between;
     cursor: pointer;
     font-weight:500;
@@ -98,7 +100,6 @@
     cursor: pointer;
     background-color: #fff;
     color: #162C5F;
-    transform: scale(1.1);
 }
 
 .expcover #submitEXP {
@@ -146,4 +147,3 @@
 .expcover #submitEXP{
     grid-area: f;
 }
-

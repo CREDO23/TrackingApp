@@ -13,6 +13,18 @@
     width: 100%;
 }
 
+.agentHcover .deconnexion{
+    position: absolute;
+    left: 93%;
+    top: 50%;
+    transform: translate(-50% , -50%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    font-weight:500;
+    width: 110px;
+}
 
 .title{
     position: absolute;
@@ -25,7 +37,7 @@
     float: right;
     background-color: #E5E5E5;
     float: right;
-    width: 1236px;
+    width: 80%;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -42,23 +54,18 @@
     transition: all 0.4s;
 }
 
-.agentHcover button:hover{
+.agentHCover button:hover{
     cursor: pointer;
     background-color: #fff;
     color: #162C5F;
     transform: scale(1.1);
 }
 
-#deconnexion{
-    position: absolute;
-    left: 95%;
-    top: 50%;
-    transform: translate(-50% , -50%);
-    display: flex;
-    justify-content: space-between;
+.agentHcover button:hover{
     cursor: pointer;
-    font-weight:500;
-    width: 110px;
+    background-color: #fff;
+    color: #162C5F;
+    transform: scale(1.1);
 }
 
 
@@ -97,7 +104,13 @@
     color: #E5E5E5;
   font-weight: 600;
   font-size: larger;
-  border-bottom: 2px solid #E5E5E5;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.s{
+    border: 1px solid #E5E5E5;
+    border-radius: 5px;
 }
 
 .agentHcover .tableau{
