@@ -6,19 +6,13 @@
 }
 
 .load{
-    color:white;
+ color: black;
 }
 
 .loading{
+    height:  100%;
+    width:  100%;
     display: flex;
-    width: 100vw;
-    height: 100vh;
-    justify-content: center;
     align-items: center;
-    background-color:transparent;
-    background-color:rgba(22,44,95,0.65);
-    z-index: 5;
-    position: absolute;
-    top : 0px;
-    left : 0px
+    justify-content: center;
 }

@@ -1,6 +1,6 @@
 /** @format */
 
-import React, { useState } from 'react';
+import React from 'react';
 import { faRightFromBracket } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './style.css';
@@ -13,6 +13,16 @@ const Dashboard = () => {
 	const expeditions = shippings.filter(
 		(ship) => ship.author === user.userName,
 	);
+
+	const sort = expeditions.sort(
+		(a, b) => Date.parse(b.departDate) - Date.parse(a.departDate),
+	);
+
+	var rec = [];
+
+	for (var i = 0; i <= 7; i++) {
+		rec.push(sort[i]);
+	}
 
 	const expT = shippings
 		.filter((ship) => ship.author === user.userName)
@@ -79,26 +89,20 @@ const Dashboard = () => {
 							</tr>
 						</thead>
 						<tbody>
-							<tr>
-								<td>Crdo23</td>
-								<td>Mushagalusa23</td>
-								<td>Goma</td>
-								<td>223345rfhju654wsxcvbhu7654</td>
-								<td>En cours</td>
-							</tr>
-							{expeditions.map((ship) => {
-								return (
-									<>
-										<tr>
-											<td>{ship.sender}</td>
-											<td>{ship.recipient}</td>
-											<td>{ship.destinationCity}</td>
-											<td>{ship._id}</td>
-											<td>{ship.state}</td>
-										</tr>
-									</>
-								);
-							})}
+							{sort &&
+								sort.map((ship) => {
+									return (
+										<>
+											<tr>
+												<td>{ship.sender}</td>
+												<td>{ship.recipient}</td>
+												<td>{ship.destinationCity}</td>
+												<td>{ship._id}</td>
+												<td>{ship.state}</td>
+											</tr>
+										</>
+									);
+								})}
 						</tbody>
 					</table>
 				</div>
