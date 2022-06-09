@@ -7,12 +7,12 @@ const body_parser = require('body-parser');
 const sendEmail = require('../../utils/sendEmailPlaneDocking');
 
 module.exports = (app) => {
-	app.get(
+	app.post(
 		'/api/notification/planeDocking/:user',
 		body_parser.json(),
 		async (req, res) => {
 			const mobile = req.body.mobile;
-			console.log(mobile);
+			console.log(req.body);
 			const officer = req.params.user;
 			const arraySender = [];
 			const arrayRecipient = [];
@@ -42,9 +42,10 @@ module.exports = (app) => {
 							element
 								.filter((element) => element.destinationCity == ville)
 								.forEach(async (data) => {
-									await shipping
-										.updateOne(data, { state: 'Terminée' })
-										.then((data) => updates.push(data._id));
+									await shipping.updateOne(data, {
+										state: 'Terminée',
+									});
+									updates.push(data._id);
 								});
 						}
 					});

@@ -1,6 +1,5 @@
 /** @format */
 
-import React from 'react';
 import {
 	faRightFromBracket,
 	faPlaneDeparture,
@@ -13,31 +12,25 @@ import { useSelector } from 'react-redux';
 
 const Notif = () => {
 	const user = useSelector((state) => state.userReducer).userName;
-	console.log(user);
-	// const [mobile1, mobile2, mobile3, mobile4] = [
-	// 	'CAA',
-	// 	'CONGO AIRWAYS',
-	// 	'CARGO',
-	// 	'RWANDAIR',
-	// ];
+	const mobiles = ['Mobile1', 'MOBILE 2', 'MOBILE 3', 'MOBILE 4'];
 
-	const docking = async (user) => {
+	const docking = async (user, mobile) => {
+		console.log(mobile);
 		await axios({
-			method: 'get',
+			method: 'post',
 			withCredentials: true,
 			url: `${process.env.REACT_APP_API_URL}api/notification/planeDocking/${user}`,
-			data: { mobile: 'aaa' },
+			data: { mobile },
 		}).then((res) => console.log(res));
 	};
 
-	const takeOff = (user, mobile) => {
-		// await axios({
-		// 	method: 'get',
-		// 	withCredentials: true,
-		// 	url: `${process.env.REACT_APP_API_URL}api/notification/planeTakeOff/${user}`,
-		// 	data: { mobile },
-		// });
-		console.log('takeOff');
+	const takeOff = async (user, mobile) => {
+		await axios({
+			method: 'post',
+			withCredentials: true,
+			url: `${process.env.REACT_APP_API_URL}api/notification/planeTakeOff/${user}`,
+			data: { mobile },
+		});
 	};
 
 	return (
@@ -52,74 +45,34 @@ const Notif = () => {
 				</span>
 			</div>
 			<div className='notifContenair'>
-				<div id='MOBILE1'>
-					<h3>mobile1</h3>
-					<div>
-						<div
-							onClick={(e) => {
-								takeOff(user, 'CAA');
-							}}>
-							<FontAwesomeIcon icon={faPlaneDeparture} size='4x' />
-						</div>
-						<div
-							onClick={(e) => {
-								docking(user);
-							}}>
-							<FontAwesomeIcon icon={faPlaneArrival} size='4x' />
-						</div>
-					</div>
-				</div>
-				<div className='MOBILE2'>
-					<h3>MOBILE 2</h3>
-					<div>
-						<div
-							onClick={(e) => {
-								takeOff(user, 'CAA');
-							}}>
-							<FontAwesomeIcon icon={faPlaneDeparture} size='4x' />
-						</div>
-						<div
-							onClick={(e) => {
-								docking(user, 'CAA');
-							}}>
-							<FontAwesomeIcon icon={faPlaneArrival} size='4x' />
-						</div>
-					</div>
-				</div>
-				<div id='MOBILE3'>
-					<h3>MOBILE 3</h3>
-					<div>
-						<div
-							onClick={(e) => {
-								takeOff(user, 'CAA');
-							}}>
-							<FontAwesomeIcon icon={faPlaneDeparture} size='4x' />
-						</div>
-						<div
-							onClick={(e) => {
-								docking(user, 'CAA');
-							}}>
-							<FontAwesomeIcon icon={faPlaneArrival} size='4x' />
-						</div>
-					</div>
-				</div>
-				<div id='MOBILE4'>
-					<h3>MOBILE 4</h3>
-					<div>
-						<div
-							onClick={(e) => {
-								takeOff(user, 'CAA');
-							}}>
-							<FontAwesomeIcon icon={faPlaneDeparture} size='4x' />
-						</div>
-						<div
-							onClick={(e) => {
-								docking(user, 'CAA');
-							}}>
-							<FontAwesomeIcon icon={faPlaneArrival} size='4x' />
-						</div>
-					</div>
-				</div>
+				{mobiles &&
+					mobiles.map((mobile) => {
+						return (
+							<div key={mobile}>
+								<h3>{mobile}</h3>
+								<div>
+									<div
+										onClick={(e) => {
+											takeOff(user, `${mobile}`);
+										}}>
+										<FontAwesomeIcon
+											icon={faPlaneDeparture}
+											size='4x'
+										/>
+									</div>
+									<div
+										onClick={(e) => {
+											docking(user, `${mobile}`);
+										}}>
+										<FontAwesomeIcon
+											icon={faPlaneArrival}
+											size='4x'
+										/>
+									</div>
+								</div>
+							</div>
+						);
+					})}
 			</div>
 		</div>
 	);

@@ -20,7 +20,10 @@
     height: 150px;
     width: 150px;
     border-radius: 100%;
-    background-color: #fff;
+    border:  2px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .sidemenuA .topA{

@@ -49,19 +49,23 @@
     transform: scale(1.1);
 }
 
-#deconnexion{
+.HCcover .deconnexion{
     position: absolute;
-    left: 95%;
+    left: 93%;
     top: 50%;
     transform: translate(-50% , -50%);
     display: flex;
-    align-items: center;
     justify-content: space-between;
     cursor: pointer;
     font-weight:500;
     width: 110px;
+
 }
 
+.s{
+    border: 1px solid #E5E5E5;
+    border-radius: 5px;
+}
 
 .HCcover .HCmiddle{
     min-height: 50px;
@@ -96,9 +100,10 @@
 
 .HCcover .HCmiddle li{
     color: #E5E5E5;
-  font-weight: 600;
-  font-size: larger;
-  border-bottom: 2px solid #E5E5E5;
+    font-weight: 600;
+    font-size: larger;
+    padding: 5px;
+    cursor: pointer;
 }
 
 .HCcover .Ctableau{

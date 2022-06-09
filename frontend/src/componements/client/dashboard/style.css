@@ -93,9 +93,9 @@
     transform: scale(1.1);
 }
 
-#deconnexion{
+.Cdashcover .deconnexion{
     position: absolute;
-    left: 95%;
+    left: 93%;
     top: 50%;
     transform: translate(-50% , -50%);
     display: flex;
@@ -103,6 +103,7 @@
     cursor: pointer;
     font-weight:500;
     width: 110px;
+
 }
 
 

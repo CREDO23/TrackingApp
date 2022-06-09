@@ -3,8 +3,6 @@
 import axios from 'axios';
 export const GET_USER = 'GET_USER';
 export const NEW_EXP = 'NEW_EXP';
-export const NOTIF_DOCKING = 'NOTIF_DOCKING';
-export const NOTIF_TAKEOFF = 'NOTIF_TAKEOFF';
 export const TRACKER = 'TRACKER';
 export const GET_SHIPPINGS = 'GET_SHIPPINGS';
 
@@ -72,41 +70,3 @@ export const newExp = (
 		return dispatch({ type: NEW_EXP, payload: res.data.shipping });
 	};
 };
-
-export const docking = (user, mobile) => {
-	return async (dispatch) => {
-		const res = await axios({
-			method: 'get',
-			url: `${process.env.REACT_APP_API_URL}api/notification/planeDocking/${user}`,
-			withCredentials: true,
-			data: { mobile },
-		});
-
-		return dispatch({ type: NOTIF_DOCKING, payload: res.data });
-	};
-};
-
-// export const takeoff = (user, mobile) => {
-// 	return async (dispatch) => {
-// 		await axios({
-// 			method: 'get',
-// 			url: `${process.env.REACT_APP_API_URL}api/notification/planeTakeOff/${user}`,
-// 			withCredentials: true,
-// 			data: { mobile },
-// 		});
-
-// 		return dispatch({ type: NOTIF_TAKEOFF });
-// 	};
-// };
-
-// export const tracker = (key) => {
-// 	return async (dispatch) => {
-// 		const res = await axios({
-// 			method: 'get',
-// 			url: `${process.env.REACT_APP_API_URL}api/customer/track/${key}`,
-// 			withCredentials: true,
-// 		});
-
-// 		return dispatch({ type: TRACKER, payload: res.data });
-// 	};
-// };

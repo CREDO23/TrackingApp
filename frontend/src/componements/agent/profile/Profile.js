@@ -1,7 +1,10 @@
 /** @format */
 
 import React from 'react';
-import { faRightFromBracket } from '@fortawesome/free-solid-svg-icons';
+import {
+	faRightFromBracket,
+	faUser,
+} from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './style.css';
 import { useSelector } from 'react-redux';
@@ -19,7 +22,9 @@ const Profile = () => {
 				</span>
 			</div>
 			<div className='profilContenair'>
-				<div className='img'></div>
+				<div className='img'>
+					<FontAwesomeIcon size='5x' icon={faUser} />
+				</div>
 				<div className='grid '>
 					<div className='userName it'>
 						<p>UserName :</p>

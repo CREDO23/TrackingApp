@@ -8,7 +8,7 @@
     float: left;
     color: #fff;
     width: 20%;
-    height: 100vh;
+    height: 712px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -20,7 +20,10 @@
     height: 150px;
     width: 150px;
     border-radius: 100%;
-    background-color: #fff;
+    border:  2px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .sidemenuC .topA{

@@ -73,6 +73,20 @@ const {
 delivery(app);
 expeditions(app);
 
+const {
+	addCity,
+	deleteCity,
+} = require('./src/routes/registrations/regCity');
+addCity(app);
+deleteCity(app);
+
+const {
+	addMobile,
+	deleteMobile,
+} = require('./src/routes/registrations/regMobile');
+addMobile(app);
+deleteMobile(app);
+
 require('./src/routes/auth/logout')(app);
 require('./src/routes/auth/singin')(app);
 require('./src/routes/auth/singin')(app);

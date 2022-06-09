@@ -12,7 +12,7 @@
 
 .clientProfilcover .deconnexion{
     position: absolute;
-    left: 95%;
+    left: 93%;
     top: 50%;
     transform: translate(-50% , -50%);
     display: flex;
@@ -34,13 +34,15 @@
     width: 150px;
     border: black solid 2px;
     border-radius: 100%;
-    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .clientProfilcover{
     float: right;
     background-color: #E5E5E5;
     float: right;
-    width: 1236px;
+    width: 80%;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -101,6 +103,7 @@
     background-color: #fff;
     color: #162C5F;
     transform: scale(1.1);
+    border: 2px solid #162C5F ;
 }
 
 .clientProfilcover .userName{

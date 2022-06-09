@@ -92,15 +92,13 @@ const Dashboard = () => {
 							{sort &&
 								sort.map((ship) => {
 									return (
-										<>
-											<tr>
-												<td>{ship.sender}</td>
-												<td>{ship.recipient}</td>
-												<td>{ship.destinationCity}</td>
-												<td>{ship._id}</td>
-												<td>{ship.state}</td>
-											</tr>
-										</>
+										<tr key={ship._id}>
+											<td>{ship.sender}</td>
+											<td>{ship.recipient}</td>
+											<td>{ship.destinationCity}</td>
+											<td>{ship._id}</td>
+											<td>{ship.state}</td>
+										</tr>
 									);
 								})}
 						</tbody>

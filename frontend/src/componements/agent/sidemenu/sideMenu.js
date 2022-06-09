@@ -16,15 +16,15 @@ import { useSelector } from 'react-redux';
 
 const Sidemenu = () => {
 	const user = useSelector((state) => state.userReducer);
-	const shippings = useSelector((state) => state.shippingReducer);
 
 	return (
 		<div className='sidemenuA'>
 			<div className='topA'>
-				<div className='imgProfile'></div>
+				<div className='imgProfile'>
+					<FontAwesomeIcon size='6x' icon={faUser} />
+				</div>
 				<h5>{user.userName}</h5>
 				<h5>{user.eMail}</h5>
-				<h5>{shippings.length}</h5>
 			</div>
 			<div className='bottomA'>
 				<NavLink exact to='/agent/dashboard'>
