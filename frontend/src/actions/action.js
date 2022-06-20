@@ -2,9 +2,9 @@
 
 import axios from 'axios';
 export const GET_USER = 'GET_USER';
+export const GET_SHIPPINGS = 'GET_SHIPPINGS';
 export const NEW_EXP = 'NEW_EXP';
 export const TRACKER = 'TRACKER';
-export const GET_SHIPPINGS = 'GET_SHIPPINGS';
 
 export const getUser = (user) => {
 	return async (dispatch) => {

@@ -57,6 +57,12 @@ const NewExp = () => {
 					</div>
 					<div className='villeDest it '>
 						<label htmlFor='villeDest'>Ville de livraison :</label>
+						{/* <select name='villeDest' id='villeDest'>
+							<option value='MOBILE 1'>MOBILE 1</option>
+							<option value='MOBILE 2'>MOBILE 2</option>
+							<option value='MOBILE 3'>MOBILE 3</option>
+							<option value='MOBILE 4'>MOBILE 4</option>
+						</select> */}
 						<input
 							type='text'
 							id='villeDest'
