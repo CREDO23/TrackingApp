@@ -13,13 +13,14 @@ import Aviser from '../../pages/Paviser';
 import NewExp from '../../pages/PnewExp';
 import Paccueil from '../../pages/Paccueil';
 import React from 'react';
-import Connexion from '../client/connexion/Connection';
+import Connexion from '../client/connexion/Connexion';
 
 const index = () => {
 	return (
 		<BrowserRouter>
 			<Routes>
 				<Route path='/' element={<Paccueil />} />
+				<Route path='/connexion' element={<Connexion />} />
 				<Route
 					path='/client/historique'
 					element={<HistoriqueClient />}
@@ -36,7 +37,6 @@ const index = () => {
 				<Route path='/agent/tracker' element={<TrackerAgent />} />
 				<Route path='/agent/aviser' element={<Aviser />} />
 				<Route path='/agent/dashboard' element={<Agent />} />
-				<Route path='/connexion' element={<Connexion />} />
 			</Routes>
 		</BrowserRouter>
 	);
