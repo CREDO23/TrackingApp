@@ -19,6 +19,7 @@ const send = (ardess, shipping, key) => {
 
 	var mailOptions = {
 		from: 'bakerathierry@gmail.com',
+		secure: true,
 		to: ardess,
 		subject: `-----Nom de l'agence-----`,
 		text: `Votre colis est pret à etre expedié :

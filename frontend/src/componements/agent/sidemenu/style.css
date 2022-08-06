@@ -1,59 +1,82 @@
 *{
-    box-sizing: border-box;
-    margin: 0;
     padding: 0;
+    margin: 0;
+    box-sizing: border-box; 
 }
 
-.sidemenuA{
-    float: left;
-    color: #fff;
-    width: 20%;
-    height: 712px;
+:root{
+    --blueFonce : #021D40;
+--blueClair : #043F8C;
+--white : #F2F2F2;
+--yellow : #F2CB05;
+--red : #F2421B;
+}
+.sidemenu-agent{
+    height: 100vh;
+    width: 260px;
+   overflow: hidden;
+    background: var(--white);
+}
+.sidemenu-agent .top{
+    height: 100px;
+    width: 100%;
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
     align-items: center;
-    background-color: #1C263D;
-}
-
-.sidemenuA .imgProfile{
-    height: 150px;
-    width: 150px;
-    border-radius: 100%;
-    border:  2px solid white;
-    display: flex;
     justify-content: center;
-    align-items: center;
 }
-
-.sidemenuA .topA{
+.sidemenu-agent .top img{
+    height: 80%;
+    width: 80%;
+}
+.sidemenu-agent ul{
+    height: calc(100% - 100px);
+    width: 100%;
     display: flex;
-    justify-content: space-evenly;
     flex-direction: column;
-    align-items: center;
-    height: 250px;
+    align-items: flex-end;
+    position: relative;
+    padding-left: 5px;
 }
-
-.sidemenuA .bottomA{
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: column;
-    align-items: center;
-}
-
-.sidemenuA .menu{
-    border-radius: 7px;
-    background-color: #fff;
-    color: black;
-    width: 250px;
+.sidemenu-agent ul li{
+    width: 95%;
     margin: 7px 0px;
-    height: 40px;
+    position: relative;
+}
+.sidemenu-agent ul li a:hover{
+    transform: translateX(10px);
+}
+.sidemenu-agent ul span{
+    position: absolute;
+    bottom: 0;
+    margin: 20px 0;
+    width: 100%;
+}
+.sidemenu-agent ul li a .icon , ul span a .icon{
+    margin: 0px 20px;
+}
+.sidemenu-agent ul li a , ul span a {
+    color: var(--blueClair);
+    font-size: 1rem;
+    width: 100%;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding:0px 10px;
+    border: none;
+    border-radius: 0;
+    transition: 0.4s;
+}
+.sidemenu-agent ul li:hover , .sidemenu-agent .selected a {
+    background:white;
+    color: #333;
+}
+.sidemenu-agent .selected a{
+    background: linear-gradient(90deg, rgba(4,63,140,.05) ,rgba(4,63,140,.01));
+}
+.sidemenu-agent .selected::after{
+    content: '';
+    height: 100%;
+    width: 3px;
+    background: var(--blueClair);
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
-.sidemenuA .menu:hover{
-    transform: scale(1.1);
-}

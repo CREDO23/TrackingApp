@@ -9,7 +9,6 @@ const Accueil = () => {
 			<div className='Pacover'></div>
 			<div className='accueilTop'>
 				<h1>
-					{' '}
 					Nous acheminons vos biens professionnels, effets personnels,
 					valises diplomatiques par AIR, MER et ROUTE .
 				</h1>

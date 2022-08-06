@@ -6,7 +6,11 @@
     list-style: none;
 }
 
-
+.accueilTop{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .accueilTop h1{
     color: white;
     font-size: 48px;
@@ -14,6 +18,7 @@
     font-weight: 700;
     line-height: 50px;
     z-index: 4;
+    width: 85%;
 }
 .accueilMid h4 , .accueilBottom h4{
     text-align: center;

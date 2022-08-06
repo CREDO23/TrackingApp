@@ -1,6 +1,6 @@
 /** @format */
 
-import React from 'react';
+import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import {
 	faHome,
@@ -9,61 +9,75 @@ import {
 	faUser,
 	faCirclePlus,
 	faMessage,
+	faArrowRightFromBracket,
 } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './style.css';
-import { useSelector } from 'react-redux';
 
 const Sidemenu = () => {
-	const user = useSelector((state) => state.userReducer);
-
+	const menusData = [
+		{
+			link: '/agent/dashboard',
+			iconName: faHome,
+			label: 'Dashboard',
+		},
+		{
+			link: '/agent/newExp',
+			iconName: faCirclePlus,
+			label: 'Nouvelle EXP',
+		},
+		{
+			link: '/agent/aviser',
+			iconName: faMessage,
+			label: 'Aviser',
+		},
+		{
+			link: '/agent/historique',
+			iconName: faClockRotateLeft,
+			label: 'Historique',
+		},
+		{
+			link: '/agent/tracker',
+			iconName: faMapLocationDot,
+			label: 'Tracker',
+		},
+		{
+			link: '/agent/profil',
+			iconName: faUser,
+			label: 'Profil',
+		},
+	];
+	const [selected, setSelected] = useState(0);
 	return (
-		<div className='sidemenuA'>
-			<div className='topA'>
-				<div className='imgProfile'>
-					<FontAwesomeIcon size='6x' icon={faUser} />
-				</div>
-				<h5>{user.userName}</h5>
-				<h5>{user.eMail}</h5>
-			</div>
-			<div className='bottomA'>
-				<NavLink exact to='/agent/dashboard'>
-					<div className='menu'>
-						<h4>Dashboard</h4>
-						<FontAwesomeIcon icon={faHome} />
-					</div>
-				</NavLink>
-				<NavLink exact to='/agent/newExp'>
-					<div className='menu'>
-						<h4>Nouvelle EXP</h4>
-						<FontAwesomeIcon icon={faCirclePlus} />
-					</div>
-				</NavLink>
-				<NavLink exact to='/agent/aviser'>
-					<div className='menu'>
-						<h4>Aviser</h4>
-						<FontAwesomeIcon icon={faMessage} />
-					</div>
-				</NavLink>
-				<NavLink exact to='/agent/historique'>
-					<div className='menu'>
-						<h4>Historique</h4>
-						<FontAwesomeIcon icon={faClockRotateLeft} />
-					</div>
-				</NavLink>
-				<NavLink exact to='/agent/tracker'>
-					<div className='menu'>
-						<h4>Tracker</h4>
-						<FontAwesomeIcon icon={faMapLocationDot} />
-					</div>
-				</NavLink>
-				<NavLink exact to='/agent/profil'>
-					<div className='menu'>
-						<h4>Profil</h4>
-						<FontAwesomeIcon icon={faUser} />
-					</div>
-				</NavLink>
-			</div>
+		<div className='sidemenu-agent'>
+			<div className='top'></div>
+			<ul>
+				{menusData.map((menu, index) => {
+					return (
+						<li
+							key={index}
+							onClick={() => setSelected(index)}
+							className={selected === index ? 'selected' : ''}>
+							<NavLink exact to={menu.link}>
+								<FontAwesomeIcon
+									className='icon'
+									icon={menu.iconName}
+								/>
+								<p>{menu.label}</p>
+							</NavLink>
+						</li>
+					);
+				})}
+				<span>
+					<NavLink exact to='/agent/profil'>
+						<FontAwesomeIcon
+							className='icon'
+							icon={faArrowRightFromBracket}
+						/>
+						<p>Deconnexion</p>
+					</NavLink>
+				</span>
+			</ul>
 		</div>
 	);
 };
