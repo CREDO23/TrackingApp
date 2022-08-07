@@ -7,11 +7,13 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './style.css';
 
 const Connexion = () => {
-	const [userName, setUserName] = useState('');
+	const [userNameSingIn, setUserNameSingIn] = useState('');
+	const [userNameSingUp, setUserNameSingUp] = useState('');
 	const [firstName, setFirstName] = useState('');
 	const [lastName, setLastName] = useState('');
 	const [eMail, setEmail] = useState('');
-	const [password, setPassword] = useState('');
+	const [passwordSingIn, setPasswordSingIn] = useState('');
+	const [passwordSinguP, setPasswordSingUp] = useState('');
 	const [Singin, setSingin] = useState(true);
 	const [Singup, setSingup] = useState(false);
 	const [isLoadInfo, setIsLoadInfo] = useState(false);
@@ -24,8 +26,8 @@ const Connexion = () => {
 			withCredentials: true,
 			url: `${process.env.REACT_APP_API_URL}api/singin`,
 			data: {
-				userName,
-				password,
+				userName: userNameSingIn,
+				password: passwordSingIn,
 			},
 		})
 			.then((res) => {
@@ -46,11 +48,11 @@ const Connexion = () => {
 			method: 'post',
 			url: `${process.env.REACT_APP_API_URL}api/Customer/singup`,
 			data: {
-				userName,
+				userName: userNameSingUp,
 				firstName,
 				lastName,
 				eMail,
-				password,
+				password: passwordSinguP,
 			},
 		})
 			.then((res) => {
@@ -111,8 +113,8 @@ const Connexion = () => {
 									placeholder='userName'
 									name='userName'
 									id='userName'
-									onChange={(e) => setUserName(e.target.value)}
-									value={userName}
+									onChange={(e) => setUserNameSingUp(e.target.value)}
+									value={userNameSingUp}
 								/>
 							</div>
 							<div>
@@ -151,8 +153,8 @@ const Connexion = () => {
 									placeholder='Password'
 									name='passowrd'
 									id='password'
-									onChange={(e) => setPassword(e.target.value)}
-									value={password}
+									onChange={(e) => setPasswordSingUp(e.target.value)}
+									value={passwordSinguP}
 								/>
 							</div>
 							<div className='btn'>
@@ -200,8 +202,8 @@ const Connexion = () => {
 									placeholder='userName'
 									name='userName'
 									id='userName'
-									onChange={(e) => setUserName(e.target.value)}
-									value={userName}
+									onChange={(e) => setUserNameSingIn(e.target.value)}
+									value={userNameSingIn}
 								/>
 							</div>
 							<div>
@@ -210,8 +212,8 @@ const Connexion = () => {
 									placeholder='Password'
 									name='passowrd'
 									id='password'
-									onChange={(e) => setPassword(e.target.value)}
-									value={password}
+									onChange={(e) => setPasswordSingIn(e.target.value)}
+									value={passwordSingIn}
 								/>
 							</div>
 							<div className='btn'>
