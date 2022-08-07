@@ -8,10 +8,11 @@ import { useSelector } from 'react-redux';
 
 const Dashboard = () => {
 	const shippings = useSelector((state) => state.shippingReducer);
-	const user = useSelector((state) => state.userReducer);
+	console.log(useSelector((state) => state.shippingReducer));
+	const { curentUser } = useSelector((state) => state.userReducer);
 
 	const expeditions = shippings.filter(
-		(ship) => ship.author === user.userName,
+		(ship) => ship.author === curentUser.userName,
 	);
 
 	const sort = expeditions.sort(
@@ -25,19 +26,19 @@ const Dashboard = () => {
 	}
 
 	const expT = shippings
-		.filter((ship) => ship.author === user.userName)
+		.filter((ship) => ship.author === curentUser.userName)
 		.filter((ship) => ship.state === 'Terminée');
 
 	const expE = shippings
-		.filter((ship) => ship.author === user.userName)
+		.filter((ship) => ship.author === curentUser.userName)
 		.filter((ship) => ship.state === 'En cours');
 
 	const livT = shippings
-		.filter((ship) => ship.destinationCity === user.city)
+		.filter((ship) => ship.destinationCity === curentUser.city)
 		.filter((ship) => ship.state === 'Terminée');
 
 	const livE = shippings
-		.filter((ship) => ship.destinationCity === user.city)
+		.filter((ship) => ship.destinationCity === curentUser.city)
 		.filter((ship) => ship.state === 'En cours');
 
 	return (

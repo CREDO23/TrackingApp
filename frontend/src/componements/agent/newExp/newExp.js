@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './style.css';
 import { useSelector } from 'react-redux';
 import { useDispatch } from 'react-redux';
-import { newExp } from '../../../actions/action';
+import { newExp } from '../../../redux/actions/action';
 
 const NewExp = () => {
 	const [type, setType] = useState('');
@@ -14,14 +14,27 @@ const NewExp = () => {
 	const [destinataire, setDestinataire] = useState('');
 	const [villeDest, setVilleDest] = useState('');
 	const [mobile, setMobile] = useState('');
+	const [isLoading, setIsLoading] = useState(false);
 
 	const dispatch = useDispatch();
-	const user = useSelector((state) => state.userReducer).userName;
+	const { userName } = useSelector(
+		(state) => state.userReducer.curentUser,
+	);
 
 	const handleSubmit = async (e) => {
+		e.preventDefault();
+		setIsLoading(true);
 		dispatch(
-			newExp(user, expediteur, destinataire, mobile, villeDest, type),
+			newExp(
+				userName,
+				expediteur,
+				destinataire,
+				mobile,
+				villeDest,
+				type,
+			),
 		);
+		setIsLoading(false);
 	};
 	return (
 		<div className='expcover'>
@@ -92,7 +105,7 @@ const NewExp = () => {
 						<input
 							type='submit'
 							name=''
-							value='SOUMETTRE'
+							value={isLoading ? 'Patienter...' : 'SOUMETRE'}
 							id='submit'
 						/>
 					</div>

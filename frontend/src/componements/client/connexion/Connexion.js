@@ -14,10 +14,11 @@ const Connexion = () => {
 	const [password, setPassword] = useState('');
 	const [Singin, setSingin] = useState(true);
 	const [Singup, setSingup] = useState(false);
+	const [isLoadInfo, setIsLoadInfo] = useState(false);
 
 	const handleConnexion = async (e) => {
 		e.preventDefault();
-
+		setIsLoadInfo(true);
 		await axios({
 			method: 'post',
 			withCredentials: true,
@@ -33,13 +34,14 @@ const Connexion = () => {
 				} else if (res.data.user === 'agent') {
 					window.location = '/agent/dashboard';
 				}
+				setIsLoadInfo(false);
 			})
 			.catch((err) => console.log(err));
 	};
 
 	const handleRegister = async (e) => {
 		e.preventDefault();
-
+		setIsLoadInfo(true);
 		await axios({
 			method: 'post',
 			url: `${process.env.REACT_APP_API_URL}api/Customer/singup`,
@@ -55,6 +57,7 @@ const Connexion = () => {
 				console.log(res);
 				setSingup(false);
 				setSingin(true);
+				setIsLoadInfo(false);
 			})
 			.catch((err) => {
 				console.log(err);
@@ -157,7 +160,7 @@ const Connexion = () => {
 									type='submit'
 									name='submit'
 									id='submit'
-									value='SOUMETTRE'
+									value={isLoadInfo ? 'Loading...' : 'SOUMETTRE'}
 								/>
 							</div>
 						</div>
@@ -216,7 +219,7 @@ const Connexion = () => {
 									type='submit'
 									name=''
 									id='submit'
-									value='SOUMETTRE'
+									value={isLoadInfo ? 'Loading...' : 'SOUMETTRE'}
 								/>
 							</div>
 						</div>

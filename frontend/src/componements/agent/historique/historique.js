@@ -8,7 +8,7 @@ import { useSelector } from 'react-redux';
 
 const Historique = () => {
 	const shippings = useSelector((state) => state.shippingReducer);
-	const user = useSelector((state) => state.userReducer);
+	const user = useSelector((state) => state.userReducer.curentUser);
 
 	const expeditions = shippings.filter(
 		(ship) => ship.author === user.userName,

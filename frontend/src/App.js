@@ -3,12 +3,12 @@
 import React, { useEffect, useState } from 'react';
 import './App.css';
 import { BrowserRouter } from 'react-router-dom';
-import Sidemenu from './componements/agent/sidemenu/Sidemenu';
+import Sidemenu from './componements/agent/sidemenu/sideMenu';
 import Routes from './componements/Routes';
 import { userContext } from './componements/context/context';
 import axios from 'axios';
 import { useDispatch } from 'react-redux';
-import { getUser, getShippings } from './actions/action';
+import { getUser, getShippings } from './redux/actions/action';
 
 const App = () => {
 	const [user, setUser] = useState('');
