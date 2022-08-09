@@ -13,7 +13,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 // import NewExp from '../../pages/PnewExp';
 import Paccueil from '../../pages/Paccueil';
 import React from 'react';
-import Connexion from '../client/connexion/Connexion';
+import Connexion from '../client/connexion/Connexion/';
 import Dashboard from '../agent/dashboard/dashboard';
 import NouvelExp from '../agent/newExp/newExp';
 import Aviser from '../agent/notif/Notif';
