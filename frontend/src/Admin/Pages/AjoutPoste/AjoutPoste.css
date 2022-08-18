@@ -1,0 +1,64 @@
+/*le style css de la page ajoutPoste*/
+
+.from_NPoste {
+    width: 400px;
+    height: 330px;
+    border-radius: 10px;
+    box-shadow: #06133a 0px 0px 40px;
+    background-color: white;
+}
+
+#TitleNPoste {
+
+    width: 100%;
+    height: 30px;
+
+    padding-top: 6px;
+    text-align: center;
+    color: white;
+    background-image: linear-gradient(to right, #06133a, #dbdde5);
+    border-radius: 10px 10px 0px 0px;
+}
+
+/*les champs de saisi*/
+
+
+#NouveauPoste {
+    margin: auto;
+    width: 90%;
+}
+
+#NouveauPoste label {
+    display: block;
+    font-size: .8em;
+    margin-left: 10px;
+    margin-top: 10px;
+    color: #06133a;
+}
+
+#NouveauPoste span {
+    color: red;
+}
+
+.champ_NPoste {
+    display: block;
+    width: 95%;
+    padding: 7px 5px;
+    margin: 2px auto;
+    border: #06133a solid 1px;
+    background-color: #f5f7fb;
+    border-radius: 8px;
+}
+
+.submit_NPoste {
+    width: 50%;
+    margin: 30px auto;
+    padding: 10px 30px;
+    display: block;
+    cursor: pointer;
+    background-image: linear-gradient(to right, #06133a, #dbdde5);
+    border: none;
+    color: #06133a;
+    font-weight: bold;
+    border-radius: 30px;
+}

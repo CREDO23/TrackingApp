@@ -39,7 +39,6 @@ const App = () => {
 			<BrowserRouter>
 				<>
 					<Routes></Routes>
-					<Sidemenu></Sidemenu>
 				</>
 			</BrowserRouter>
 		</userContext.Provider>

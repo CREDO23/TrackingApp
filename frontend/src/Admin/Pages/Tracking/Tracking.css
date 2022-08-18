@@ -1,0 +1,62 @@
+.from_Track {
+    width: 400px;
+    height: 180px;
+    background-color: white;
+    box-shadow: #06133a 0px 0px 40px;
+    border-radius: 10px;
+}
+
+.TitleTrackAdmin {
+
+    width: 100%;
+    height: 30px;
+
+    padding-top: 6px;
+    text-align: center;
+    color: white;
+    background-image: linear-gradient(to right, #06133a, #dbdde5);
+    border-radius: 10px 10px 0px 0px;
+}
+
+/*les champs de saisi*/
+
+
+#TrackingAdmin {
+    margin: auto;
+    width: 90%;
+}
+
+#TrackingAdmin label {
+    display: block;
+    font-size: .8em;
+    margin-left: 10px;
+    margin-top: 10px;
+    color: #06133a;
+}
+
+#TrackingAdmin span {
+    color: red;
+}
+
+.champ_TrackAdmin {
+    display: block;
+    width: 95%;
+    padding: 7px 5px;
+    margin: 2px auto;
+    border: #06133a solid 1px;
+    background-color: #f5f7fb;
+    border-radius: 8px;
+}
+
+.submit_TrackAdmin {
+    width: 50%;
+    margin: 20px auto;
+    padding: 10px 30px;
+    display: block;
+    cursor: pointer;
+    border: none;
+
+    border-radius: 30px;
+    color: white;
+    background-color: #06133a;
+}

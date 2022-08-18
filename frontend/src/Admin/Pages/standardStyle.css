@@ -1,0 +1,30 @@
+/*style css dash Admin*/
+.Admin_Container {
+    display: grid;
+    grid-template-columns: 1fr 3.2fr;
+    grid-template-rows: 100vh;
+}
+
+.Admin {
+    margin-left: 5px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 10fr;
+
+}
+
+.containerAdmin {
+    background: linear-gradient(to right, #dbdde5, #f5f7fb);
+    box-shadow: 1px 0px 2px #06133a;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.HistoryAdmin {
+    /*une classe pour le composant Historique de l'administrateur*/
+    background: linear-gradient(to right, #dbdde5, #f5f7fb);
+    box-shadow: 1px 0px 2px #06133a;
+    height: 100%;
+}

@@ -1,0 +1,39 @@
+/*le style css de la navBar de L'Administrateur*/
+
+.NavBarAdmin {
+    position: relative;
+    margin-bottom: 5px;
+    padding-right: 25px;
+
+
+
+    box-shadow: 1px 1px 2px #06133a;
+    background: linear-gradient(to right, #dbdde5, #f5f7fb);
+
+}
+
+.ContainerNav {
+    width: 200px;
+    position: absolute;
+    bottom: 10px;
+    right: 15px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.naviAdmin {
+    text-decoration: none;
+    color: #06133a;
+    padding: 2px;
+
+    transition: all .5s;
+}
+
+.naviAdmin:hover {
+    padding: 5px;
+    background-color: #06133a;
+    color: white;
+    border-radius: 50%;
+
+    transition: all .5s;
+}

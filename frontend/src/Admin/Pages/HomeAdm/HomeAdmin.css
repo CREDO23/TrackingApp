@@ -1,0 +1,34 @@
+/*le code css de la page d'acceuil*/
+
+.AccueilAdmin {
+    background-image: url("../../../Agent/images/industrial.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    color: #dbdde5;
+}
+
+.DescriptionAdm {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(5, 19, 58, 0.8);
+}
+
+.h1 {
+    text-align: center;
+    margin-top: 0px;
+    padding: 100px 0px;
+    font-size: 2em;
+    font-family: font_head;
+    text-decoration: underline;
+}
+
+.text_descAd {
+    font-family: font_head;
+    text-align: center;
+    font-size: 1em;
+}

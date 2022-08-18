@@ -2,13 +2,14 @@
 
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
+import './Admin/Fonts/icofont/icofont.min.css'
 import App from './App';
 import rootReducer from './redux/reducers/index';
 import { Provider } from 'react-redux';
 import thunk from 'redux-thunk';
 import { applyMiddleware, createStore } from 'redux';
 import { composeWithDevTools } from 'redux-devtools-extension';
+import './index.css';
 
 const store = createStore(
 	rootReducer,

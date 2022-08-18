@@ -1,34 +1,38 @@
-*{
+* {
     padding: 0;
     margin: 0;
-    box-sizing: border-box; 
+    box-sizing: border-box;
 }
 
-:root{
-    --blueFonce : #021D40;
---blueClair : #043F8C;
---white : #F2F2F2;
---yellow : #F2CB05;
---red : #F2421B;
+:root {
+    --blueFonce: #021D40;
+    --blueClair: #043F8C;
+    --white: #F2F2F2;
+    --yellow: #F2CB05;
+    --red: #F2421B;
 }
-.sidemenu-agent{
+
+.sidemenu-agent {
     height: 100vh;
     width: 260px;
-   overflow: hidden;
+    overflow: hidden;
     background: var(--white);
 }
-.sidemenu-agent .top{
+
+.sidemenu-agent .top {
     height: 100px;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.sidemenu-agent .top img{
+
+.sidemenu-agent .top img {
     height: 80%;
     width: 80%;
 }
-.sidemenu-agent ul{
+
+.sidemenu-agent ul {
     height: calc(100% - 100px);
     width: 100%;
     display: flex;
@@ -37,24 +41,31 @@
     position: relative;
     padding-left: 5px;
 }
-.sidemenu-agent ul li{
+
+.sidemenu-agent ul li {
     width: 95%;
     margin: 7px 0px;
     position: relative;
 }
-.sidemenu-agent ul li a:hover{
+
+.sidemenu-agent ul li a:hover {
     transform: translateX(10px);
 }
-.sidemenu-agent ul span{
+
+.sidemenu-agent ul span {
     position: absolute;
     bottom: 0;
     margin: 20px 0;
     width: 100%;
 }
-.sidemenu-agent ul li a .icon , ul span a .icon{
+
+.sidemenu-agent ul li a .icon,
+ul span a .icon {
     margin: 0px 20px;
 }
-.sidemenu-agent ul li a , ul span a {
+
+.sidemenu-agent ul li a,
+ul span a {
     color: var(--blueClair);
     font-size: 1rem;
     width: 100%;
@@ -63,14 +74,18 @@
     border-radius: 0;
     transition: 0.4s;
 }
-.sidemenu-agent ul li:hover , .sidemenu-agent .selected a {
-    background:white;
+
+.sidemenu-agent ul li:hover,
+.sidemenu-agent .selected a {
+    background: white;
     color: #333;
 }
-.sidemenu-agent .selected a{
-    background: linear-gradient(90deg, rgba(4,63,140,.05) ,rgba(4,63,140,.01));
+
+.sidemenu-agent .selected a {
+    background: linear-gradient(90deg, rgba(4, 63, 140, .05), rgba(4, 63, 140, .01));
 }
-.sidemenu-agent .selected::after{
+
+.sidemenu-agent .selected::after {
     content: '';
     height: 100%;
     width: 3px;
@@ -79,4 +94,3 @@
     top: 0;
     left: 0;
 }
-
