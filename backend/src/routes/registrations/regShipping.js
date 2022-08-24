@@ -1,5 +1,5 @@
 /** @format */
-
+const { transporter } = require('../../mail/transporter.js');
 const shipping = require('../../models/shipping');
 const body_parser = require('body-parser');
 const customer = require('../../models/customers');
@@ -9,14 +9,6 @@ const dotenv = require('dotenv');
 dotenv.config();
 
 const send = (ardess, shipping, key) => {
-	var transporter = nodemailer.createTransport({
-		service: 'gmail',
-		auth: {
-			user: 'bakerathierry@gmail.com',
-			pass: `${process.env.MAILCODE}`,
-		},
-	});
-
 	var mailOptions = {
 		from: 'bakerathierry@gmail.com',
 		secure: true,
@@ -123,33 +115,6 @@ const createShipping = (app) => {
 		},
 	);
 };
-
-// const updateShippingMobile = (app) => {
-// 	app.put(
-// 		'/api/updateShipping',
-// 		body_parser.json(),
-// 		async (req, res) => {
-// 			const mobileTo = req.body.mobileTo;
-// 			const mobileFrom = req.body.mobileFrom;
-// 			if (mobileFrom && mobileTo) {
-// 				await shipping
-// 					.updateMany({ mobile: mobileFrom }, { mobile: mobileTo })
-// 					.then((data) => {
-// 						const msg = `le transfert de colis du mobile ${mobileFrom}  au mobile ${mobileTo} a reussi avec succés`;
-// 						if (data.modifiedCount == 0) {
-// 							res
-// 								.status(201)
-// 								.json('Aucune éxpedition correspondante');
-// 						}
-// 						res.status(200).json({ msg, data });
-// 					})
-// 					.catch((err) => res.status(400).json(err));
-// 			} else {
-// 				res.status(400).json('Echec de mise  à jour');
-// 			}
-// 		},
-// 	);
-// };
 
 const deleteShipping = (app) => {
 	app.delete(

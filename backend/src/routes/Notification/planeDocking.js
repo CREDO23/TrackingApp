@@ -12,7 +12,6 @@ module.exports = (app) => {
 		body_parser.json(),
 		async (req, res) => {
 			const mobile = req.body.mobile;
-			console.log(req.body);
 			const officer = req.params.user;
 			const arraySender = [];
 			const arrayRecipient = [];
