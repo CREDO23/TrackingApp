@@ -1,6 +1,6 @@
 /** @format */
 
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 // import Client from '../../pages/Pclient';
 // import Agent from '../../pages/Pagent';
 // import HistoriqueAgent from '../../pages/PhistoriqueAgent';
@@ -20,6 +20,7 @@ import Aviser from '../agent/notif/Notif';
 import Historique from '../agent/historique/Historique';
 import Profile from '../agent/profile/Profile';
 import Tracker from '../tracker/Tracker';
+import Map from '../map/Map';
 
 const index = () => {
 	return (
@@ -34,6 +35,7 @@ const index = () => {
 				<Route path='/client/dashboard' element={<Client />} />
 				<Route path='/client/tracker' element={<TrackerClient />} /> */}
 			<Route path='/agent/historique' element={<Historique />} />
+			<Route path='/tracker' element={<Map />} />
 			<Route path='/agent/newExp' element={<NouvelExp />} />
 			<Route path='/agent/profil' element={<Profile />} />
 			<Route path='/agent/tracker' element={<Tracker />} />

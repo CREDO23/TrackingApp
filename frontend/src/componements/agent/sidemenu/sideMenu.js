@@ -37,7 +37,7 @@ const Sidemenu = () => {
 			label: 'Historique',
 		},
 		{
-			link: '/agent/tracker',
+			link: '/tracker',
 			iconName: faMapLocationDot,
 			label: 'Tracker',
 		},
