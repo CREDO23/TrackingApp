@@ -2,11 +2,35 @@ import React from 'react';
 import {faCircleUser } from '@fortawesome/free-solid-svg-icons'
 import {FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import './style.css'
-
+import { ToastContainer, toast } from 'react-toastify';
+ import 'react-toastify/dist/ReactToastify.css';
 const Ajout = () => {
-    const 
+    const handleSubmit = (e) => {
+        e.preventDefault()
+        toast.success('Vos données ont été ont envoyés avec success', {
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        });
+        
+    }
     return (
         <>
+            <ToastContainer
+            position="top-right"
+            autoClose={5000}
+            hideProgressBar={false}
+            newestOnTop={false}
+            closeOnClick
+            rtl={false}
+            pauseOnFocusLoss
+            draggable
+            pauseOnHover
+        />
         <form className='agent'  onSubmit={handleSubmit}>
             <div className="icon">
             <FontAwesomeIcon icon={faCircleUser} color="#E5E5E5" size="5x"/>
