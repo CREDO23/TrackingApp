@@ -1,5 +1,7 @@
 /** @format */
 
+import { ToastContainer, toast } from 'react-toastify';
+ import 'react-toastify/dist/ReactToastify.css';
 import React from 'react';
 import { faRightFromBracket } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -31,18 +33,57 @@ const Dashboard = () => {
 
 	const expE = shippings
 		.filter((ship) => ship.author === curentUser.userName)
-		.filter((ship) => ship.state === 'En cours');
+		.filter((ship) => {
+				toast.info('En cours...', {
+							position: "top-right",
+							autoClose: 5000,
+							hideProgressBar: false,
+							closeOnClick: true,
+							pauseOnHover: true,
+							draggable: true,
+							progress: undefined,
+						});
+
+			
+			return ship.state === 'En cours'
+		});
 
 	const livT = shippings
 		.filter((ship) => ship.destinationCity === curentUser.city)
-		.filter((ship) => ship.state === 'Terminée');
+		.filter((ship) => {
+							toast.success('Terminer', {
+							position: "top-right",
+							autoClose: 5000,
+							hideProgressBar: false,
+							closeOnClick: true,
+							pauseOnHover: true,
+							draggable: true,
+							progress: undefined,
+							});
+			
+			return ship.state === 'Terminée'
+		});
 
 	const livE = shippings
 		.filter((ship) => ship.destinationCity === curentUser.city)
-		.filter((ship) => ship.state === 'En cours');
+		.filter((ship) => {
+			toast.success('En cours ...', {
+					position: "top-right",
+					autoClose: 5000,
+					hideProgressBar: false,
+					closeOnClick: true,
+					pauseOnHover: true,
+					draggable: true,
+					progress: undefined,
+			});
+			
+			return ship.state === 'En cours'
+		});
 
 	return (
+		<div>
 		<div className='agentDashCover'>
+			
 			<div className='dashTop'>
 				<span className='title'>
 					<h3>DASHBOARD</h3>
@@ -106,7 +147,19 @@ const Dashboard = () => {
 					</table>
 				</div>
 			</div>
-		</div>
+			</div>
+			<ToastContainer
+					position="top-right"
+					autoClose={5000}
+					hideProgressBar={false}
+					newestOnTop={false}
+					closeOnClick
+					rtl={false}
+					pauseOnFocusLoss
+					draggable
+					pauseOnHover
+			/>
+			</div>
 	);
 };
 

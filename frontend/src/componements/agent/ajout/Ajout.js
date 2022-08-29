@@ -4,33 +4,34 @@ import {FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import './style.css'
 
 const Ajout = () => {
+    const 
     return (
         <>
-        <form className='agent' action="">
+        <form className='agent'  onSubmit={handleSubmit}>
             <div className="icon">
             <FontAwesomeIcon icon={faCircleUser} color="#E5E5E5" size="5x"/>
             </div>
             <div className="agentForm">
             <div>
-                <input type="text" placeholder="userName" name="userName" id="userName" />
+                <input type="text" placeholder="userName"  required  name="userName" id="userName"  />
             </div>
              <div>
-                <input type="text" placeholder='FirstName' name="firstName" id="firstName" />
+                <input type="text" placeholder='FirstName'  required name="firstName" id="firstName" />
             </div>
             <div>
-                <input type="text" placeholder='LastName' name="lastName" id="lastName" />
+                <input type="text" placeholder='LastName'  required name="lastName" id="lastName" />
             </div>
             <div>
-                <input type="text" placeholder='Pays(poste)' name="pays" id="pays" />
+                <input type="text" placeholder='Pays(poste)'  required name="pays" id="pays" />
             </div>
             <div>
-                <input type="text" placeholder='Ville(Poste)' name="ville" id="ville" />
+                <input type="text" placeholder='Ville(Poste)' required name="ville" id="ville" />
             </div>
             <div>
-                <input type="mail" placeholder='Email' name="mail" id="mail" />
+                <input type="mail" placeholder='Email' required  name="mail" id="mail" />
             </div>   
             <div>
-                <input type="password" placeholder='Password' name="passowrd" id="password" />
+                <input type="password" placeholder='Password' required name="passowrd" id="password" />
             </div>
              <div className='btn'>
                  <input type="submit" name="" id="submit" value="SOUMETTRE" />
