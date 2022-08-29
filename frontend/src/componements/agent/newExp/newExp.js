@@ -3,6 +3,9 @@
 import React, { useState } from 'react';
 import { faRightFromBracket } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+ import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+  
 import './style.css';
 import { useSelector } from 'react-redux';
 import { useDispatch } from 'react-redux';
@@ -23,6 +26,7 @@ const NewExp = () => {
 
 	const handleSubmit = async (e) => {
 		e.preventDefault();
+		
 		setIsLoading(true);
 		dispatch(
 			newExp(
@@ -35,9 +39,19 @@ const NewExp = () => {
 			),
 		);
 		setIsLoading(false);
+		toast.success('En cour ...', {
+		position: "top-right",
+		autoClose: 5000,
+		hideProgressBar: false,
+		closeOnClick: true,
+		pauseOnHover: true,
+		draggable: true,
+		progress: undefined,
+		});
 	};
 	return (
 		<div className='expcover'>
+			<ToastContainer/>
 			<div className='profilTop'>
 				<span className='title'>
 					<h3>Nouvelle EXP</h3>
