@@ -8,6 +8,8 @@ import {
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './style.css';
 import { useSelector } from 'react-redux';
+// les gars here il me faut une fnction d'execution je ne sais pas a qui reviens cette tache 
+
 const Profile = () => {
 	const user = useSelector((state) => state.userReducer.curentUser);
 	return (
