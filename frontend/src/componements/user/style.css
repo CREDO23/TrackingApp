@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.user1{
+    width:100vw;
+    height: 30vh;
+    display: flex;
+   margin-top: 10px;
+}
+.user2{
+    background: #183549;
+    width: 50%;
+    text-align: center;
+}
+.user3{
+    background: #dd1b3c;
+    width:50%;
+    text-align: center;
+}
+.user4{
+    width: 100px;
+    border-radius: 100px;
+    height: 30px;
+    font-size: 10px;
+    background: #dd1b3c;
+    color: #fff;
+    margin-top: 30px;
+}
+.user4:hover{
+    background: #fff;
+    color: black;
+}
+.user5{
+    width: 100px;
+    border-radius: 100px;
+    height: 30px;
+    font-size: 10px;
+    background: #183549;
+    color: #fff;
+    margin-top: 30px;
+}
+.user5:hover{
+    background: #fff;
+    color:black
+}
+.user6{
+    margin-top: 50px;
+}

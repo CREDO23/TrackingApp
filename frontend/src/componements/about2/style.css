@@ -1,0 +1,50 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+.ph3{
+    position: absolute;
+    margin-left: 600px;
+    width: 550px;
+    border: none;
+    height: 300px;
+    margin-top: 80px;
+}
+.aboutnav{
+    background:linear-gradient(to top, rgba(13,11,114,0.7),rgba(170, 170, 174, 0.7)) ,url('../../../public/images/foot.jpg.jpg');
+    background-size: 100% 100%;
+     background-repeat: no-repeat;;
+     height: 30vh;
+     color:#fff;
+}
+.propos{
+  
+    position: absolute;
+}
+.about11{
+    width: 300px;
+    height: 50px;
+    box-shadow: 0pc 5px 0px 0px #e5e5e5;
+    text-align: center;
+    margin: auto;
+    margin-top:-30px;
+    background: #fff;
+}
+.two{
+    margin-top: 20px;
+}
+.mypara1{
+    position: absolute;
+    margin-top: 100px;
+    margin-left: 50px;
+    color: black;
+    width: 500px;
+    height: 300px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-align: justify;
+}
+.about2foot{
+    margin-top: -1000px;
+    width: 100vw;
+  }

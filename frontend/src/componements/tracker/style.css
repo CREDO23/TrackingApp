@@ -1,130 +1,74 @@
 *{
-    padding: 0;
     margin: 0;
-    box-sizing: border-box;
-    outline: none;
-    
+    padding: 0;
+   
+}
+.track{
+    /* margin-bottom: 110px; */
+   background-color: brown;
+   position: absolute;
+   margin-left: 220px;
+   margin-top: -120px;
 }
 
-.trackCover .profilTop{
-    position: relative;
-    height: 40px;
-    width: 100%;
+#text3{
+  margin-top: 130px;
+  position: absolute;
+  margin-left: 540px;
+  color: white;
+  width: 500px;
+  font-size: 30px;
 }
-
-
-.title{
+.champs{
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50% , -50%);
+    margin-left: 520px;
+    margin-top: 230px;
+    z-index: 4;
+  
 }
 
-.trackCover{
-    float: right;
-    background-color: #E5E5E5;
-    float: right;
-    width: 80%;
-    height: 100vh;
+.ph5{
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 100px;
+}
+.bon{
     display: flex;
-    flex-direction: column;
-    align-items: center;
+   
+}
+#email{
+   width: 400px;
+   height: 50px;
+   border: solid #fff 2px;
+   background: transparent;
+   color: #fff;
+}
+
+#text{
+    width: 400px;
+    height: 50px;
+    border: solid #fff 2px;
+    background: transparent;
+    color: #fff;
+}
+
+#btn1{
+    width: 200px;
+    height: 40px;
+    padding-left: 65px;
+    background-color:#dd1b3c;
+    color: white;
+    border: none;
    
 }
 
-.trackCover .profilContenair{
-    background-color: #F1F1F1;
-    padding: 30px;
-    width: min-content;
-    height: 580px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    border-radius: 20px;
-}
-
-.trackCover .grid{
-    display: grid;
-    grid-template-columns: 580px ;
-    grid-template-rows: repeat(3 , 50px);
-    gap: 5px;
-    grid-template-areas: 
-    "c c"
-    "b b"
-    "e e"
-    ;
-}
-
-.trackCover .it{
-    border-radius: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0px 5px;
-    width: 100%;
-    letter-spacing: 2px;
-}
-.trackCover #submit {
-    display: flex;
-    justify-content: center;
-    align-items: center;  
-}
-
-.trackCover input{
-    padding: 3px 10px;
-    height: 35px;
-    margin: 10px 0px;
-    border-radius: 7px;
-    width: 100%;
-    border: solid black 2px;
-}
-
-.trackCover input[type="submit"]{
-    color: #fff;
-    width: min-content;
-    transition: all 0.4s;
-    background-color: #162C5F;
-}
-
-.trackCover input[type="submit"]:hover{
+#btn1:hover{
+    font-weight: bold;
+    transform: scale(1.1);
     cursor: pointer;
-    background-color: #fff;
-    color: #162C5F;
-}
+    background: #dd1b3c;
 
-.trackCover button{
-    padding: 7px;
-    border-radius: 7px;
-    background-color: #1C263D;
-    color: white;
-    transition: all 0.4s;
-}
-
-.trackCover button:hover{
-    cursor: pointer;
-    background-color: #fff;
-    color: #162C5F;
-}
-
-.trackCover .deconnexion{
-    position: absolute;
-    left: 93%;
-    top: 50%;
-    transform: translate(-50% , -50%);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    cursor: pointer;
-    font-weight:500;
-    width: 110px;
-}
-
-.trackCover .key{
-    grid-area: c;
 }
 
 
-.trackCover #submit{
-    grid-area: e;
-}
+

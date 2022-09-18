@@ -2,68 +2,57 @@
 
 import React from 'react';
 import './style.css';
+import Tracker from '../tracker/tracker';
+import Navbar from '../navbar/Navbar';
+
 
 const Accueil = () => {
 	return (
-		<div>
-			<div className='Pacover'></div>
+		<div className='accueiltout'>
+			<div>
+			<Navbar></Navbar>
+			</div>
+			<div className='track'>
+				<Tracker></Tracker>
+			</div>
+			
+			
 			<div className='accueilTop'>
-				<h1>
-					Nous acheminons vos biens professionnels, effets personnels,
-					valises diplomatiques par AIR, MER et ROUTE .
-				</h1>
+				<h1>Let Us Move You With <br></br>Honesty And Greatness.</h1>
+				<p className='one'>
+					Nous acheminons vos biens professionnels,<br></br> effets personnels,
+					valises diplomatiques par <br></br>AIR, MER et ROUTE .
+				</p>
 				<div className='accueilButton'>
 					<h4>EN SAVOIR PLUS</h4>
 				</div>
+				
 			</div>
-
-			<div className='accueilMid'>
-				<h3>BIENVENU À L'AGENCE ....</h3>
-				<div className='categories'>
-					<div className='accueilItem'>
-						<h4>ENTREPRISES</h4>
-						<h3>LOGO</h3>
-						<p>
-							Agence Fret Cargo transporte vos marchandises en toute
-							sécurité et transparence, par voie aérienne, terrestre
-							et maritime, de la Suisse vers le monde entier et du
-							monde entier vers la Suisse.
-						</p>
-					</div>
-					<div className='accueilItem'>
-						<h4>PARTICULIERS</h4>
-						<h3>LOGO</h3>
-						<p>
-							L'Agence Fret Cargo vous accompagne vers le prochain
-							chapitre de votre vie, en Suisse et dans le monde
-							entier. L'Agence Fret Cargo est une entreprise familiale
-							dotée d'un vaste réseau international et d'un
-							savoir-faire suisse reconnu.
-						</p>
-					</div>
-					<div className='accueilItem'>
-						<h4>DIPLOMATES</h4>
-						<h3>LOGO</h3>
-						<p>
-							L'Agence Fret Cargo, à l'image de la Genève
-							internationale où elle est établie, cultive un sentiment
-							de transparence et de discrétion pour le corps
-							diplomatique international lorsqu'il doit déménager et
-							pour le transport des valises diplomatiques.
-						</p>
-					</div>
+			
+            <div className='chemin1'>
+				<div className='chemin'>
+					<img src='images/voitur1.jpg' alt='photo' className='pic'/>
+					<h3>fret routier</h3>
+					<p>vous etes le bienvenue chex nous</p>
+				</div>
+				<div className='chemin'>
+				<img src='images/avion2.jpg' alt='photo' className='pic'/>
+					<h3>fret aerien</h3>
+					<p>vous etes le bienvenue chex nous</p>
+				</div>
+				<div className='chemin'>
+				<img src='images/train1.jpg' alt='photo' className='pic'/>
+					<h3>fret feroviere</h3>
+					<p>vous etes le bienvenue chex nous</p>
+				</div>
+				<div className='chemin'>
+				<img src='images/navire2.jpg' alt='photo' className='pic'/>
+					<h3>fret maritime</h3>
+					<p>vous etes le bienvenue chex nous</p>
 				</div>
 			</div>
-
-			<div className='accueilBottom'>
-				<h4>
-					{' '}
-					Nos spécialistes sont à la pointe de l’ingénierie logistique
-					et sont aptes à acheminer vos marchandises et effets
-					personnels en toute transparence, fiabilité et sécurité .
-				</h4>
-			</div>
-		</div>
+			
+	   </div>
 	);
 };
 

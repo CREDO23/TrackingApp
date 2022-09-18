@@ -16,11 +16,14 @@ import React from 'react';
 import Connexion from '../client/connexion/Connexion';
 import Dashboard from '../agent/dashboard/dashboard';
 import NouvelExp from '../agent/newExp/newExp';
-import Aviser from '../agent/notif/Notif';
-import Historique from '../agent/historique/Historique';
+import Aviser from '../agent/notif/notif'
+import Historique from '../agent/historique/historique'
 import Profile from '../agent/profile/Profile';
-import Tracker from '../tracker/Tracker';
+import Tracker from '../../componements/tracker/tracker'
 import Map from '../map/Map';
+import Contact from '../contact/contact';
+import Service2 from '../service2/service2';
+import About2 from '../about2/about2';
 
 const index = () => {
 	return (
@@ -41,6 +44,9 @@ const index = () => {
 			<Route path='/agent/tracker' element={<Tracker />} />
 			<Route path='/agent/aviser' element={<Aviser />} />
 			<Route path='/agent/dashboard' element={<Dashboard />} />
+			<Route path='/CONTACT' element={<Contact/>}/>
+			<Route path='/SERVICE' element={<Service2/>}/>
+			<Route path='/PROPOS' element={<About2/>}/>
 		</Routes>
 	);
 };

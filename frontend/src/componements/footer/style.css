@@ -1,40 +1,30 @@
 .fcontenair{
-    position: relative;
-    height: 491px;
-    display: flex;
-    justify-content: space-around;
-    text-align: center;
-    background-image: url('../../../public/images/foot.jpg.jpg');
-    background-position: 50% , 50%;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.fleft{
-    width: 75%;
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.Footcover{
-    width: 100vw;
-    height: 491px;
     position: absolute;
-    bottom: 0px;
-    left: 0px;
-    z-index: 3;
-    background-color:rgba(22,45,95,0.5);
+    height: 491px;
+    display: flex;
+    justify-content:space-around;
+    margin-top: 1500px;
+    background: #183549;
+    width: 100vw;
 }
 
-.contact{
-    margin: 10px;
-    width: 25%;
-    height: 90%;
-    border-radius: 20px;
-    background-color:rgba(256,256,256, 0.6);
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    align-items: center;
-    border: solid white 2px;
+.foot{
+  font-size: 13px;
+  margin-top: 50px;
+}
+.footcontact{
+  margin-top: 1590px;
+  position: absolute;
+  z-index: 8;
+}
+.foottitre{
+  text-align: center;
+  color: #dd1b3c;
+}
+.one{
+  color: #dd1b3c;
+}
+
+.foot p{
+  color:white;
 }

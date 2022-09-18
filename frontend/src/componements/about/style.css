@@ -1,0 +1,45 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+.prop{
+    width: 100vw;
+    height: 100vh;
+  
+}
+.ph6{
+    position: absolute;
+    margin-left: 600px;
+    width: 550px;
+    border: none;
+    height: 300px;
+    margin-top: 80px;
+}
+
+.title{
+    margin-left: 500px;
+    margin-top: 50px;
+    position: absolute;
+    width: 300px;
+}
+
+.phr{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    /* height: 100vh; */
+    position: absolute;
+    margin-top: 200px;
+}
+
+.mypara{
+    position: absolute;
+    margin-top: 100px;
+    margin-left: 50px;
+    color: black;
+    width: 500px;
+    height: 300px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-align: justify;
+    font-size: 15px;
+}
+
