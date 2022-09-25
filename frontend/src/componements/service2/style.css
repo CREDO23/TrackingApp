@@ -17,7 +17,7 @@
     width: 200px;
     text-align: center;
     height: 350px; 
-    justify-content: space-around;
+    /* justify-content: space-around; */
     background-color: #fff;
     box-shadow: 0px 5px 5px 5px #e5e5e5;
 }
@@ -58,4 +58,18 @@
 }
 .servicefooter{
   margin-top: -1000px;
+}
+
+@media (max-width:600px){
+    .service11{
+       flex-direction: column;
+       margin-top: 650px;
+     
+    }
+    .service12{
+        margin-top: 20px;
+    }
+    .servicefooter{
+        margin-top: 150px;
+    }
 }

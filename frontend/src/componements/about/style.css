@@ -15,12 +15,13 @@
     border: none;
     height: 300px;
     margin-top: 80px;
+   float: right;
 }
 
 .title{
-    margin-left: 500px;
+    margin-left: 300px;
     margin-top: 50px;
-    position: absolute;
+    /* position: absolute; */
     width: 300px;
 }
 
@@ -36,10 +37,36 @@
     margin-top: 100px;
     margin-left: 50px;
     color: black;
-    width: 500px;
+    width:500px;
     height: 300px;
     font-family:Georgia, 'Times New Roman', Times, serif;
     text-align: justify;
     font-size: 15px;
+    
 }
 
+@media (max-width:600px){
+    .mypara{
+       width: 400px;
+       margin-left: 20px;
+       margin-top: -10px;
+       position: absolute;
+       font-size: 13px;
+       margin-top: 50px;
+    }
+    .ph6{
+        margin: auto;
+        margin-top: 250px;
+        width:400px;
+        height: 150px;
+        margin-left:20px ;
+    }
+    .title{
+        margin-top: -1px;
+       
+        margin-left: -5px;
+    }
+    .prop{
+        margin-top: 700px;
+    }
+}

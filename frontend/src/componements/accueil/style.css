@@ -37,7 +37,10 @@
     margin-right: 650px;
 }
 
-
+.track{
+    width: 30%;
+    position: absolute;
+}
 
 .accueilButton{
    height:  50px;
@@ -85,7 +88,7 @@
     display: flex;
     width: 1000px;
     margin-left: 120px;
-    height: 200px;
+    height: 230px;
     background-color:#fff;
     color: #000;
     margin-top: -100px;
@@ -93,7 +96,9 @@
     z-index: 3;
     border-radius: 10px;
     justify-content: space-around;
+    align-items: center;
    box-shadow: 0px 10px 0px 0px #e5e5e5;
+   text-align: center;
 }
 .chemin{
     /* margin-top: 80px; */
@@ -109,3 +114,99 @@
     background-color: #000;
     color: #fff;
 }
+
+@media (max-width:600px){
+   
+    .accueilTop h1{
+      margin-left: 650px;
+      font-size: 30px;
+      width: 500px;
+      margin-top: -50px;
+    }
+    .accueilButton{
+        width: 200px;
+        margin-top: 30px;
+        margin-left: 880px;
+    }
+    .chemin1{
+        width: 200px;
+        flex-wrap: wrap;
+       margin-top: 20px;
+    }
+   .track{
+  margin-left: -500px;
+   }
+   .accueilTop p{
+    margin-left: 650px;
+    width: 50%;
+    margin-top: -80px;
+    text-align: center;
+   }
+   .pic{
+    width: 400px;
+   margin-left: -100px;
+   }
+}
+@media (max-width:1000px){
+    .accueilTop h1{
+        margin-left: 650px;
+        font-size: 30px;
+        width: 500px;
+        margin-top: -50px;
+      }
+      .accueilButton{
+          width: 200px;
+          margin-top: 30px;
+          margin-left: 880px;
+      }
+      .chemin1{
+          width: 200px;
+          /* flex-wrap: wrap; */
+         margin-top: 20px;
+      }
+     .track{
+    margin-left: -500px;
+     }
+     .accueilTop p{
+      margin-left: 650px;
+      width: 50%;
+      margin-top: -80px;
+      text-align: center;
+     }
+     .pic{
+      width: 400px;
+     margin-left: -100px;
+     }
+    }
+
+@media (max-width:1200px){
+    .accueilTop h1{
+        margin-left: 650px;
+        font-size: 30px;
+        width: 500px;
+        margin-top: -50px;
+      }
+      .accueilButton{
+          width: 200px;
+          margin-top: 30px;
+          margin-left: 880px;
+      }
+      .chemin1{
+          width: 200px;
+          /* flex-wrap: wrap; */
+         margin-top: 20px;
+      }
+     .track{
+    margin-left: -500px;
+     }
+     .accueilTop p{
+      margin-left: 650px;
+      width: 50%;
+      margin-top: -80px;
+      text-align: center;
+     }
+     .pic{
+      width: 400px;
+     margin-left: -100px;
+     }
+    }

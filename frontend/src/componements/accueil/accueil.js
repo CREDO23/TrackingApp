@@ -33,22 +33,22 @@ const Accueil = () => {
 				<div className='chemin'>
 					<img src='images/voitur1.jpg' alt='photo' className='pic'/>
 					<h3>fret routier</h3>
-					<p>vous etes le bienvenue chex nous</p>
+					<p>Nous mettons à votre service le meilleur fret routier pour le transport de vos colis.</p>
 				</div>
 				<div className='chemin'>
 				<img src='images/avion2.jpg' alt='photo' className='pic'/>
 					<h3>fret aerien</h3>
-					<p>vous etes le bienvenue chex nous</p>
+					<p>vous voulez encoyer vos colis par la voie aerienne, n'hesiter pas à contacter notre agence.</p>
 				</div>
 				<div className='chemin'>
 				<img src='images/train1.jpg' alt='photo' className='pic'/>
 					<h3>fret feroviere</h3>
-					<p>vous etes le bienvenue chex nous</p>
+					<p>Vous vous demandez comment transporter vos colis via un train, Nous on vous le facilite.</p>
 				</div>
 				<div className='chemin'>
 				<img src='images/navire2.jpg' alt='photo' className='pic'/>
 					<h3>fret maritime</h3>
-					<p>vous etes le bienvenue chex nous</p>
+					<p>Nous oeuvrons aussi dans le transport par voei maritime c'est qui est plus avantager pour vous</p>
 				</div>
 			</div>
 			

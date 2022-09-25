@@ -3,17 +3,10 @@
     padding: 0;
    
 }
-.track{
-    /* margin-bottom: 110px; */
-   background-color: brown;
-   position: absolute;
-   margin-left: 220px;
-   margin-top: -120px;
-}
 
 #text3{
   margin-top: 130px;
-  position: absolute;
+  /* position: absolute; */
   margin-left: 540px;
   color: white;
   width: 500px;
@@ -21,20 +14,16 @@
 }
 .champs{
     position: absolute;
-    margin-left: 520px;
-    margin-top: 230px;
-    z-index: 4;
-  
+     margin-left: 800px;
+    margin-top: 130px; 
+ 
 }
 
-.ph5{
-    position: absolute;
-    margin-top: 50px;
-    margin-left: 100px;
-}
+
 .bon{
     display: flex;
-   
+    
+  
 }
 #email{
    width: 400px;
@@ -71,4 +60,54 @@
 }
 
 
+@media (max-width:600px){
+    .champs{
+        position: absolute;
+        margin-left: 520px;
+        margin-top: 320px;
+    }
 
+    #email{
+        height: 30px;
+        width: 400px;
+    }
+    
+    #text{
+        height: 30px;
+        width: 400px;
+    }
+    #btn1{
+        margin-left: 100px;
+    }
+    .bon{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width:1000px){
+  
+
+    #email{
+        height: 30px;
+        width: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #text{
+        height: 30px;
+        width: 400px;
+    }
+    #btn1{
+        margin-left: 100px;
+    }
+    .bon{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+    }
+}

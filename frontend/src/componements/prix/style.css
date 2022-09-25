@@ -58,3 +58,25 @@ input{
     color: #fff;
     font-size: 10px;
 }
+
+@media (max-width:600px){
+    .service2{
+        flex-wrap:wrap;
+        margin-top: 80px;
+    }
+    .service1{
+        margin-top: 650px;
+        height: 100vh;
+    }
+    #btn11{
+        margin: auto;
+       margin-left: 170px;
+       margin-top: 30px;
+    }
+    .vrai{
+        width: 300px;
+    }
+    .service3{
+        margin-top: -5px;
+    }
+}

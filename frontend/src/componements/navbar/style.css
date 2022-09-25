@@ -45,9 +45,7 @@
     font-family:Georgia, 'Times New Roman', Times, serif;
     color:#183549;
   }
-  hr{
-    background-color: blue;
-  }
+ 
   
   ul a {
    color:#000;
@@ -69,14 +67,7 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
   
-  .mid{
-   display: flex;
-   justify-content: space-evenly;
-   width: 25%;
-   margin-left: 880px;
-   margin-top: -60px;
-   position: absolute;
-  }
+  
   
   @media (max-width:600px){
     .cover{
@@ -87,7 +78,6 @@
         width: 100%;
     }
     .middle{
-        /* border: 1px solid black; */
        font-size: 10px;
        font-weight: 200;
        line-height: 20px;
@@ -96,7 +86,7 @@
        justify-content: space-evenly;
        align-items: center;
        width: 100%;
-       margin-top: 30px;
+       margin-top: 10px;
    }
   
    ul a {
@@ -106,10 +96,11 @@
   
   }
   .logo{
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   margin-left: 200px;
   }
-  }
+  
+}
   
   @media (max-width:1000px){
     .cover{

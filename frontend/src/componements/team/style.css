@@ -35,3 +35,12 @@
 .pd{
     margin-top: -173px;
 }
+
+@media (max-width:600px){
+   #image{
+    flex-wrap: wrap;
+   }
+   #centrale{
+     margin-top: 1300px;
+   }
+}

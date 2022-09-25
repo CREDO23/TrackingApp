@@ -17,26 +17,26 @@ const Service2 =()=>{
 				<div className='service12'>
 					<img src='images/voitur1.jpg' alt='' className='pic1'/>
 					<h3>fret routier</h3>
-					<p>vous etes le bienvenue chex nous</p>
-                    <button className='send'>SEND</button>
+					<p>Nous choisir, ce choisir le meilleur</p>
+                    <button className='send'>ENVOYER</button>
 				</div>
 				<div className='service12'>
 				<img src='images/navire2.jpg' alt='' className='pic1'/>
 					<h3>fret maritime</h3>
-					<p>vous etes le bienvenue chex nous</p>
-                    <button  className='send'>SEND</button>
+					<p>Nous choisir, ce choisir le meilleur</p>
+                    <button  className='send'>ENVOYER</button>
 				</div>
 				<div className='service12'>
 				<img src='images/avion2.jpg' alt='' className='pic1'/>
 					<h3>fret aerien</h3>
-					<p>vous etes le bienvenue chex nous</p>
-                    <button  className='send'>SEND</button>
+					<p>Nous choisir, ce choisir le meilleur</p>
+                    <button  className='send'>ENVOYER</button>
 				</div>
 				<div className='service12'>
 				<img src='images/train1.jpg' alt='' className='pic1'/>
 					<h3>fret feroviere</h3>
-					<p>vous etes le bienvenue chex nous</p>
-                    <button  className='send'>SEND</button>
+					<p>Nous choisir, ce choisir le meilleur</p>
+                    <button  className='send'>ENVOYER</button>
 				</div>
 			</div>
 			<div className='servicefooter'>

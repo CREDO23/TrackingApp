@@ -20,7 +20,7 @@
     margin-top: 10px;
     height: 30px;
 }
-textarea{
+.texta{
     width: 500px;
     height: 150px;
     border: solid grey 2px;
@@ -61,4 +61,23 @@ textarea{
 }
 .contactfoot{
     margin-top: -1400px;
+}
+
+@media(max-width:600px){
+    .input3{
+        margin-left: 20px;
+        margin-top: 60px;
+    }
+    .in1{
+        width: 195px;
+    }
+    .in2{
+        width: 195px;
+    }
+    .input2{
+        width: 400px;
+    }
+    .texta{
+        width: 400px;
+    }
 }

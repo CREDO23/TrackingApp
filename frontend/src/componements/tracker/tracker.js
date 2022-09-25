@@ -4,10 +4,10 @@ import './style.css';
 const Tracker = () =>{
     return(
         <div>
-        <div className='trc'>
+      
            
           
-            {/* <h1 id='text3'> Tracer votre colis</h1> */}
+        
             <div className='champs'>
                
 				<input type='text' nom='text' id='text' className='bon' placeholder=' numero colis'></input>
@@ -19,7 +19,7 @@ const Tracker = () =>{
         
        
         
-        </div>
+     
         </div>
     )
 }

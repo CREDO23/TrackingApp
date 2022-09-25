@@ -48,3 +48,18 @@
     margin-top: -1000px;
     width: 100vw;
   }
+
+  @media (max-width:600px){
+    .mypara1{
+       width: 300px;
+      
+    }
+    .ph3{
+        margin-left: 50px;
+        width: 350px;
+        margin-top:400px ;
+    }
+    .about2foot{
+        margin-top: -700px;
+    }
+  }

@@ -72,3 +72,13 @@
    width: 30px;
    height: 50px;
 }
+.fa22{
+    width: 310px;
+}
+
+@media (max-width:600px){
+    .centre5{
+        flex-wrap: wrap;
+    }
+   
+}

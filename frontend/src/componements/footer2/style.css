@@ -18,3 +18,60 @@
 .foot2 p{
   color:#fff;
 }
+.mid2{
+ 
+  width: 100vw;
+  height: 80px;
+  /* margin-left: 880px; */
+  margin-top: 500px;
+  position: absolute;
+  background-color:#000;
+ margin-top: 1700px;
+ }
+ #mid{
+  width: 25%;
+  align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+  color: #fff;
+  margin-left: 460px;
+  margin-top: 30px;
+ }
+ .mid2 #mid .f{
+  color:#fff
+ }
+ .mid2 #mid .f:hover{
+  color:#dd1b3c
+ }
+ .mid2 p{
+  color:#fff;
+  text-align: center;
+ }
+
+ @media (max-width:600px){
+  .fcont{
+    flex-wrap: wrap;
+  }
+  .mid2{
+    margin-top: 1750px;
+  }
+  #mid{
+    width: 25%;
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    color: #fff;
+    margin-left: 160px;
+    margin-top: 30px;
+   }
+   .mid2 #mid .f{
+    color:#fff
+   }
+   .mid2 #mid .f:hover{
+    color:#dd1b3c
+   }
+   .mid2 p{
+    color:#fff;
+    text-align: center;
+   }
+ }

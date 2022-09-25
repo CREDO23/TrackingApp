@@ -2,7 +2,6 @@
 
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { FaWhatsapp, FaFacebook, FaLinkedin, FaMailBulk } from 'react-icons/fa';
 import './style.css';
 
 const Navbar = () => {
@@ -31,21 +30,7 @@ const Navbar = () => {
 			</ul>
 			
 
-			<ul className='mid'>
-				<li>
-					<a href='#'><FaWhatsapp/></a>
-				</li>
-				<li>
-					<a href='#A PROPOS'><FaFacebook/></a>
-				</li>
-				<li>
-					<a href='#SERVICE'><FaMailBulk/></a>
-				</li>
-				<li>
-					<a href='#PROJET'><FaLinkedin/></a>
-				</li>
-				
-			</ul>
+			
 			
 		</div>
 	);

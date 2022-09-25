@@ -19,7 +19,7 @@ const Contact =()=>{
             <input type='text' name='text' className='in2' placeholder=' Postnom'/>
             <br></br>
             <input type='mail' name='text' className='input2' placeholder=' mail'/><br></br>
-            <textarea type='text' placeholder='Votre message'></textarea>
+            <textarea type='text' className='texta' placeholder='Votre message'></textarea>
           </div>
            <button className='contactbutton'>ENVOYER</button>
 

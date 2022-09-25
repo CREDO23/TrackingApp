@@ -9,18 +9,18 @@ const Prix = ()=>{
              <p className='best'>FOR BEST PRICE AND DEVICE</p>
         <div className='service2'>
             <div className='service3'>
-                <input type='text' nom='text' className='vrai' placeholder=' numero colis'></input>
+                <input type='text' nom='text' className='vrai' placeholder=' nom'></input>
 				<br></br>
-				<input type='mail' nom='email'  className='vrai' placeholder=' votre email'></input>
+				<input type='text' nom='email'  className='vrai' placeholder=' post nom'></input>
 				<br></br>
-                <input type='mail' nom='email' className='vrai' placeholder=' votre email'></input>
+                <input type='mail' nom='email' className='vrai' placeholder=' mail'></input>
             </div>
             <div className='service3'>
-                <input type='text' nom='text' className='vrai' placeholder=' numero colis'></input>
+                <input type='text' nom='text' className='vrai' placeholder=' types de fret'></input>
 				<br></br>
-				<input type='mail' nom='email' className='vrai' placeholder=' votre email'></input>
+				<input type='text' nom='email' className='vrai' placeholder=' poids'></input>
 				<br></br>
-                <input type='mail' nom='email'  className='vrai' placeholder=' votre email'></input>
+                <input type='text' nom='email'  className='vrai' placeholder=' destination'></input>
             </div>
         </div>
         <button id='btn11'>OBTENIR</button>
